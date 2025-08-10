@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <!-- untuk view record itu semuanya menggunakan tag record untuk mendefinisaknya -->
+    <!-- ada  dua attr model dan id -->
+    <!-- id adalah id external dan untuk pemanggilan nanti format nya : view_(nama modul)_list-->
+    <record model="ir.ui.view" id="view_odoo_project_list">
+      <!-- Dalam record ada field (mandatory awalan) -->
+
+      <!-- Penamaan saja -->
+      <field name="name">odoo.project.list</field>
+      <!-- Model yang kita definisikan / nama model di python -->
+      <field name="model">odoo.project</field>
+      <!-- Untuk view lainnya, sprt kanban, table, dll -->
+      <field name="arch" type="xml">
+      <!-- List table menggunakan tree,
+      form menggunakan tag form dll...
+       -->
+
+       <!-- pada tag tree terdapat delete, edit, create, export_xlsx, sample, js_class, context dll.. -->
+        <!-- <tree create="0" edit="0" duplicate="0" export_xlsx="0"> -->
+        <tree
+        open_form_view="True"
+        editable="top" 
+        multi_edit="1" 
+        default_order="user_id,price_total desc" 
+        expand="1" 
+        default_group_by="user_id" decoration-info="state == 'draft'" decoration-success="state == ['ready', 'done']" decoration-danger="state == 'cancel'" sample="1">
+          <field name="name"/>
+          <field name="total"/>
+          <!-- Note untuk Line biasanya tidak ditampilin di tree view -->
+          <field name="user_id"/>
+          <field name="active"/>
+          <field name="company_id"/>
+          <field name="currency_id"/>
+          <field name="price_total"/>
+          <field name="start_date"/>
+          <field name="end_date"/>
+          <field name="state"/>
+        </tree>
+      </field>
+    </record>
+
+    <record id="view_odoo_project_form" model="ir.ui.view">
+      <field name="name">odoo.project.form</field>
+      <field name="model">odoo.project</field>
+      <!-- >basic_view create="1" edit="1" delete="1" duplicate="1" export_xlsx="1" js_class="class_widget" context="" /> -->
+      <field name="arch" type="xml">
+          <form >
+            <header>
+            <!-- name nya sebuah funciton atau action window (tergantung type) kalau object berarti object dari model 
+            kalau action dnegan format  -->
+              <button string="Ready" invisible="state != 'draft'" name="action_ready" type="object" class="oe_highlight"/>
+              <button string="Done" invisible="state != 'ready'" name="action_done" type="object" class="oe_highlight"/>
+              <button string="Cancel" invisible="state != 'done'" name="action_cancel" type="object" class="oe_highlight" confirm="Are you sure want cancel this ?" />
+              <field name="state" widget="statusbar" statusbar_visible="draft,ready,done,cancel" />
+            </header>
+            <sheet>
+            <div class="oe_title">
+              <h1> <field name="name" readonly="1" /> </h1>
+            </div>
+
+            <div class="oe_button_box" name="button_box">
+              <button name="action_ready" type="object" class="oe_stat_button" icon="fa-bar-chart">
+                <div class="o_field_widget o_stat_info">
+                  <span class="oe_stat_text">Sales</span>
+                </div>
+              </button>
+            </div>
+              <group>
+                <group name="name" string="string">
+                    <field name="name"/>
+                    <field name="total"/>
+                    <field name="user_id"/>
+                    <field name="active"/>
+                    <field name="company_id"/>
+                    <field name="currency_id"/>
+                    <field name="price_total"/>
+                    <field name="start_date"/>
+                    <field name="end_date"/>                  
+                </group>
+
+                <group name="name" string="string">
+                    <field name="description"/>
+                    <field name="total_compute"/>
+                    <!-- Perlakuan khusus widget many2many -->
+                    <field name="tags_ids" widget="many2many_tags"/>
+                    <field name="attachment"/>
+                    <field name="icon_image"/>
+                    <field name="note"/>
+                    <field name="state"/>
+                    <field name="ref"/>
+                    <field name="model_name"/>      
+                    <field name="res_id"/>      
+                </group>
+              </group>
+
+              <notebook>
+                <page name="line" string="Line">
+                  <field name="odoo_project_line">
+                      <tree editable="bottom">
+                        <field name="name" />
+                        <field name="qty" />
+                        <field name="price_unit" />
+                      </tree>
+                  </field>
+                </page>
+
+                <page name="note" string="note">
+                  <field name="note" />
+                </page>
+              </notebook>
+            </sheet>
+
+            <div class="oe_chatter">
+              <field name="message_ids" />
+              <field name="message_follower_ids" />
+            </div>
+          </form>
+        <!-- <tree sample="1">
+
+        </tree> -->
+      </field>
+    </record>
+
+    <record id="view_odoo_project_search" model="ir.ui.view">
+      <field name="name">odoo.project.search</field>
+      <field name="model">odoo.project</field>
+      <field name="arch" type="xml">
+          <search string="">
+            <field name="name" filter_domain="['|', ('name', 'ilike', self), ('description','ilike',self)]" />
+            <field name="user_id" groups="base.group_user" />
+            <field name="company_id" invisible="1" />
+            <field name="currency_id"/>
+            <!-- 
+            name = nama attr doang
+            domain = seperti where di query
+             -->
+            <filter name="active" string="Active Record" domain="[('active', '=', True)]"  />
+            <separator />
+
+            <filter name="status_draft" string="Draft" domain="[('state', '=', 'draft')]"  />
+            <filter name="status_ready" string="Ready" domain="[('state', '=', 'ready')]"  />
+            <filter name="status_done" string="Done" domain="[('state', '=', 'done')]" />
+            <filter name="status_cancel" string="Cancel" domain="[('state', '=', 'Cancel')]" />
+                         <!--
+             key group_by dan valuenya adalah nama fieldnya yang mau di group
+              context="{'group_by': 'field_name'}" -->
+            <group expand="0" string="Group By">
+              <filter name="status" string="status" domain="[]" context="{'group_by': 'state'}" />
+              <separator />
+
+              <filter name="group_by_user" string="Users" domain="[]" context="{'group_by': 'user_id'}" />
+              <filter name="group_by_company" string="Companies" domain="[]" context="{'group_by': 'company_id'}" />
+            </group>
+
+            <searchpanel>
+            <field name="company_id" icon="fa-building" enable_counters="1" />
+            <field name="user_id" select="multi" enable_counters="1" />
+            <field name="state" />
+            </searchpanel>
+          </search>
+      </field>
+    </record>
+
+    <record id="odoo_project_quick_create_kanban_view" model="ir.ui.view">
+      <field name="name">odoo.project.quick.create.kanban</field>
+      <field name="model">odoo.project</field>
+      <field name="arch" type="xml">
+          <form>
+            <sheet>
+              <group>
+                <field name="name" string="Record Title" />
+                <field name="instructur_id" />
+              </group>
+            </sheet>
+          </form>
+      </field>
+    </record>
+
+    <record id="odoo_project_view_kanban" model="ir.ui.view">
+      <field name="name">odoo.project.kanban</field>
+      <field name="model">odoo.project</field>
+      <field name="arch" type="xml">
+        <!--  -->
+        <kanban
+        group_create="1"
+             group_delete="1"
+        default_group_by="state"
+        group_edit="1"
+        records_draggable="1"
+        groups_draggable="1"
+        quick_create="1"
+        quick_create_view="odoo_project_quick_create_kanban_view"
+        on_create="odoo_project.action_oncreate_kanban"
+        >
+          <header>
+            <button name="action_done" string="confirm" type="object" class="btn-primary" />
+          </header>
+          <!-- harus declare kalau menggunakan t-out -->
+          <field name="name" />
+          <field name="state" />
+          <progressbar field="state" colors='{"draft" : "muted", "ready" : "success", "done" : "success", "cancel" : "danger"}' />
+          <templates>
+            <t t-name="kanban-box">
+              <div class="oe_kanban_card oe_kanban_global_click">
+                <div class="o_kanban_record_top">
+                  <t t-out="record.name.value"/>
+                </div>
+                <div class="o_kanban_record_bottom">
+                  <field name="user_id" />
+                </div>
+              </div>
+            </t>
+          </templates>
+        </kanban>
+      </field>
+    </record>
+
+
+    <record model="ir.actions.act_window" id="odoo_project.action_oncreate_kanban">
+      <field name="name">Odoo Project Quick Create Kanban</field>
+      <field name="res_model">odoo.project</field>
+      <field name="view_mode">form</field>
+      <field name="view_id" ref="odoo_project_quick_create_kanban_view" />
+      <field name="target">new</field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="action_window_odoo_project">
+      <field name="name">Odoo Project</field>
+      <field name="res_model">odoo.project</field>
+      <field name="view_mode">tree,kanban,form</field>
+    </record>
+
+    <!-- server action to the one above -->
+    <!--
+        <record model="ir.actions.server" id="odoo_project.action_server">
+          <field name="name">odoo_project server</field>
+          <field name="model_id" ref="model_odoo_project_odoo_project"/>
+          <field name="state">code</field>
+          <field name="code">
+            action = {
+              "type": "ir.actions.act_window",
+              "view_mode": "tree,form",
+              "res_model": model._name,
+            }
+          </field>
+        </record>
+    -->
+
+    <!-- Top menu item -->
+
+    <menuitem name="Odoo Project" id="odoo_project_menu_root" sequence="10" />
+
+    <!-- menu categories -->
+    <!-- nama modul.id -->
+    <menuitem name="Odoo Project" id="odoo_project_menu_data" action="odoo_project.action_window_odoo_project" parent="odoo_project.odoo_project_menu_root"/>
+    <!--
+    <menuitem name="Menu 2" id="odoo_project.menu_2" parent="odoo_project.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="odoo_project.menu_1_list" parent="odoo_project.menu_1"
+              action="odoo_project.action_window"/>
+    <menuitem name="Server to list" id="odoo_project" parent="odoo_project.menu_2"
+              action="odoo_project.action_server"/>
+    -->
+  </data>
+</odoo>

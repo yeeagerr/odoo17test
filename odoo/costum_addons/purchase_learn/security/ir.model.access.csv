@@ -1,0 +1,4 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_purchase_learn,access_purchase_learn,model_purchase_learn,,1,1,1,1
+access_purchase_learn_line,access_purchase_learn_line,model_purchase_learn_line,,1,1,1,1
+access_brand_learn,access_brand_learn,model_brand_learn,,1,1,1,1

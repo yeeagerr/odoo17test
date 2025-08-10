@@ -1,0 +1,40 @@
+<odoo>
+    <record id="view_guest_book_form" model="ir.ui.view">
+        <field name="name">guest.book.form</field>
+        <field name="model">guest.book</field>
+        <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="company"/>
+                        <field name="purpose"/>
+                        <field name="checkin"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_guest_book_tree" model="ir.ui.view">
+        <field name="name">guest.book.tree</field>
+        <field name="model">guest.book</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="company"/>
+                <field name="purpose"/>
+                <field name="checkin"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="action_guest_book" model="ir.actions.act_window">
+        <field name="name">Guest Book</field>
+        <field name="res_model">guest.book</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="menu_guest_book_root" name="Guest Book"/>
+    <menuitem id="menu_guest_book" name="Daftar Tamu" parent="menu_guest_book_root" action="action_guest_book"/>
+</odoo>

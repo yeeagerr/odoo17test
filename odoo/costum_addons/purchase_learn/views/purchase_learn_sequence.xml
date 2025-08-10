@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sequence_learn_purchase_id" model="ir.sequence">
+        <field name="name">sequence_learn_purchase_id</field>
+        <field name="code">purchase.learn</field>
+        <field name="prefix">INVOICE/%(year)s/%(month)s/</field>
+        <field name="number_next" eval="1" />
+        <field name="number_increment" eval="1" />
+        <field name="use_date_range" eval="True" />
+        <field name="company_id" eval="False" />
+        <field name="padding">5</field>
+    </record>
+
+</odoo>

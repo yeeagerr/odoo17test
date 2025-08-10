@@ -1,0 +1,107 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+
+    <record id="model_name_view_kanban" model="ir.ui.view">
+      <field name="name">Employee Directory Kanban</field>
+      <field name="model">employee.directory</field>
+      <field name="arch" type="xml">
+      <kanban group_delete="1" group_edit="1">
+        <field name="name"/>
+        <field name="job_positon"/>
+        <field name="depatement_id"/>
+        <field name="image"/>
+
+        <templates>
+          <t t-name="kanban-box">
+            <div class="oe_kanban_card oe_kanban_global_click">
+              <div class="o_kanban_image">
+                <img t-att-src="kanban_image('employee.directory', 'image', record.id.value)" class="oe_kanban_avatar" alt="Employee Image"/>
+              </div>
+              <div class="o_kanban_details">
+                <strong>
+                  <field name="name"/>
+                </strong>
+                <div class="text-muted">
+                  <t t-out="record.job_positon.value or 'No position'"/>
+                </div>
+                <div>
+                  <span class="fa fa-building-o me-3"/> 
+                  <t t-out="record.depatement_id.value or 'No department'"/>
+                </div>
+              </div>
+            </div>
+          </t>
+        </templates>
+      </kanban>
+
+      </field>
+    </record>
+
+    <record id="employee_directory_view_form" model="ir.ui.view" >
+      <field name="name">employee_directory_form</field>
+      <field name="model">employee.directory</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group>
+                  <field name="employee_id" />
+                  <field name="name" />
+                  <field name="job_positon" />
+              </group>
+              <group>
+      
+                  <field name="depatement_id"  />
+                  <field name="phone" />
+                  <field name="image" />
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record model="ir.actions.act_window" id="action_employee_directory">
+      <field name="name">Employee Directory</field>
+      <field name="res_model">employee.directory</field>
+      <field name="view_mode">kanban,form</field>
+    </record>
+
+    <record id="employee_directory_view_search" model="ir.ui.view">
+      <field name="name">employee_directory.view.search</field>
+      <field name="model">employee.directory</field>
+      <field name="arch" type="xml">
+        <search string="">
+          <field name="name" string="Cari Nama" filter_domain="[('name', 'ilike', self)]" />
+          <field name="job_positon" string="Jabatan" filter_domain="[('job_positon', 'ilike', self)]" />
+
+          <group expand="0" string="Group By">
+            <filter name="depatement_id" string="Departement" domain="[]" context="{'group_by': 'depatement_id'}" />
+          </group>
+        </search>
+      </field>
+    </record>
+
+
+    <!-- Top menu item -->
+
+    <menuitem name="Employee Directory" id="employee_directory_menu_root"  />
+
+    <!-- menu categories -->
+    <menuitem name="employee Directory Menu" id="employee_directory_menu" action="employee.action_employee_directory" parent="employee_directory_menu_root"/>
+<!--
+    <menuitem name="Menu 2" id="./odoo/costum_addons/employee.menu_2" parent="./odoo/costum_addons/employee.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="./odoo/costum_addons/employee.menu_1_list" parent="./odoo/costum_addons/employee.menu_1"
+              action="./odoo/costum_addons/employee.action_window"/>
+    <menuitem name="Server to list" id="./odoo/costum_addons/employee" parent="./odoo/costum_addons/employee.menu_2"
+              action="./odoo/costum_addons/employee.action_server"/>
+-->
+  </data>
+</odoo>

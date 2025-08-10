@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- TEMPLATE QWEB -->
+    <template id="odoo_project" name="Odoo Project Controllers">
+        <!-- Untuk memanggil template lain ke template kita / sub-template -->
+        <!-- Misalkan ada header odoo, jadi kita manggil ulang aja -->
+        <t t-call="web.layout">
+            <h1>Odoo Tutorial Template</h1>
+            <button>Click</button>
+        </t> 
+    </template>
+
+</odoo>

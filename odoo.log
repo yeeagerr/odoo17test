@@ -1,0 +1,24 @@
+2025-08-10 11:06:25,972 21200 INFO dbodoo werkzeug: 127.0.0.1 - - [10/Aug/2025 11:06:25] "GET / HTTP/1.1" 404 - 2 0.002 0.003
+2025-08-10 11:06:25,997 21200 INFO dbodoo werkzeug: 127.0.0.1 - - [10/Aug/2025 11:06:25] "GET /favicon.ico HTTP/1.1" 404 - 2 0.002 0.003
+2025-08-10 11:06:31,108 21200 INFO ? odoo.service.server: Initiating shutdown 
+2025-08-10 11:06:31,108 21200 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-08-10 11:06:31,420 21200 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 5 connections  
+2025-08-10 11:06:34,739 11248 INFO ? odoo: Odoo version 17.0 
+2025-08-10 11:06:34,739 11248 INFO ? odoo: Using configuration file at C:\Users\THINKPAD T1\OneDrive\Desktop\odoo-17.0\odoo.conf 
+2025-08-10 11:06:34,739 11248 INFO ? odoo: addons paths: ['C:\\Users\\THINKPAD T1\\OneDrive\\Desktop\\odoo-17.0\\odoo\\addons', 'c:\\users\\thinkpad t1\\appdata\\local\\openerp s.a\\odoo\\addons\\17.0', 'c:\\users\\thinkpad t1\\onedrive\\desktop\\odoo-17.0\\odoo\\addons', 'c:\\users\\thinkpad t1\\onedrive\\desktop\\odoo-17.0\\odoo', 'c:\\users\\thinkpad t1\\onedrive\\desktop\\odoo-17.0\\odoo\\costum_addons'] 
+2025-08-10 11:06:34,739 11248 INFO ? odoo: database: nezzy@localhost:5432 
+2025-08-10 11:06:34,923 11248 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe 
+2025-08-10 11:06:35,160 11248 CRITICAL ? odoo.modules.module: Couldn't load module web 
+2025-08-10 11:06:35,161 11248 ERROR ? odoo.service.server: Failed to load server-wide module `web`.
+The `web` module is provided by the addons found in the `openerp-web` project.
+Maybe you forgot to add those addons in your addons_path configuration. 
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T1\OneDrive\Desktop\odoo-17.0\odoo\service\server.py", line 1317, in load_server_wide_modules
+    odoo.modules.module.load_openerp_module(m)
+  File "C:\Users\THINKPAD T1\OneDrive\Desktop\odoo-17.0\odoo\modules\module.py", line 395, in load_openerp_module
+    __import__(qualname)
+ModuleNotFoundError: No module named 'odoo.addons.web'
+2025-08-10 11:06:35,161 11248 INFO ? odoo.service.server: HTTP service (werkzeug) running on ThinkpadT14:8069 
+2025-08-10 11:06:57,329 11248 INFO ? odoo.service.server: Initiating shutdown 
+2025-08-10 11:06:57,329 11248 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-08-10 11:06:57,460 11248 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  

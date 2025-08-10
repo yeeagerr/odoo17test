@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="purchase_learn_tree_view_id" model="ir.ui.view">
+        <field name="name">purchase_learn_tree_view_id</field>
+        <field name="model">purchase.learn</field>
+        <field name="arch" type="xml">
+                <tree>
+                    <field name="name" />
+                    <field name="brand_ids" widget="many2many_tags" />
+                    <field name="tanggal" />
+                    <field name="status" />
+                </tree>
+        </field>
+    </record>
+
+    <record id="purchase_learn_form_view_id" model="ir.ui.view">
+        <field name="name">purchase_learn_form_view_id</field>
+        <field name="model">purchase.learn</field>
+         <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="func_approved"
+                            type="object"
+                            string="Approve"
+                            class="oe_highlight"
+                            invisible="status != 'draft'"
+                            />
+
+                    <button name="func_set_done"
+                            type="object"
+                            string="Set To Done"
+                            class="oe_highlight"
+                            invisible="status != 'approve'"
+                            />
+                    <field name="status" widget="statusbar" />
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name" readonly="status != 'draft'" />
+                            <field name="brand_ids" widget="many2many_tags" readonly="status != 'draft'" />
+                        </group>
+                        <group>
+                            <field name="tanggal" readonly="status != 'draft'" />
+                        </group>
+                    </group>
+
+                    <notebook>
+                        <page >
+                            <field name="purchase_learn_ids" nolabel="1" options="{'reload_on_button':True}" >
+                                <tree edit="true" editable="button" create="true" delete="true" >
+                                    <field name="product_id"  />
+                                    <field name="description"  />
+                                    <field name="quantity"  />
+                                    <field name="uom_id"  />                                     
+                                    <field name="price"  />                                     
+                                    <field name="subtotal"  />                                     
+                                </tree>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="purchase_learn_kanban_view_id" model="ir.ui.view">
+        <field name="name">purchase_learn_kanban_view_id</field>
+        <field name="model">purchase.learn</field>
+        <field name="arch" type="xml">
+            <kanban class="o_kanban_mobile">
+                <!-- ✅ Tambahkan field yang dipakai di template -->
+                <field name="name"/>
+                <field name="tanggal"/>
+                <field name="status"/>
+
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="oe-kanban-global-click">
+                            <div class="o_kanban_record_top m16">
+                                <strong>
+                                    <span>
+                                        <t t-esc="record.name.value"/>
+                                    </span>
+                                </strong>
+                            </div>                            
+
+                            <div class="o_kanban_record_bottom">
+                                <div class="oe_kanban_bottom_left">
+                                    <span>
+                                        <t t-esc="record.status.value"/>
+                                    </span>
+                                </div>
+
+                                <div class="oe_kanban_bottom_right">
+                                    <span>
+                                        <t t-esc="record.tanggal.value"/>
+                                    </span>
+                                </div>                            
+                            </div>
+                        </div>   
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="purchase_brand_tree_views_id" model="ir.ui.view">
+        <field name="name">purchase_brand_tree_views_id</field>
+        <field name="model">brand.learn</field>
+        <field name="arch" type="xml">
+                <tree editable="bottom">
+                    <field name="name" />
+                </tree>
+        </field>        
+    </record>
+
+
+    <record id="purchase_learn_wizard_report_id" model="ir.ui.view">
+        <field name="name">purchase_learn_wizard_report_id</field>
+        <field name="model">purchase.learn.report.wizard</field>
+        <field name="priority">999</field>
+        <field name="arch" type="xml">
+                   <form string="Report Purchase Learning">
+                        <sheet>
+                            <group col="4">
+                                <field name="start_date" string="Start Date" />
+                                <field name="end_date" string="End Date" />
+                            </group>
+                        </sheet>
+                        <footer>
+                            <!-- <button type="object" name="" sting="Submit" class="btn-primary" /> -->
+                            <button string="Discard" class="btn-default" special="cancel" />
+                        </footer>
+                    </form>
+        </field>    
+    </record>
+</odoo>

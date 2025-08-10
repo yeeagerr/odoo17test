@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="purchase_learn_action_id" model="ir.actions.act_window">
+        <field name="name">Pembelian</field>
+        <field name="res_model">purchase.learn</field>
+    </record>
+
+    <record id="purchase_learn_tree_view_binding" model="ir.actions.act_window.view">
+        <field name="sequence" eval="1" />
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="purchase_learn.purchase_learn_tree_view_id" />
+        <field name="act_window_id" ref="purchase_learn.purchase_learn_action_id" />
+    </record>
+
+    <record id="purchase_learn_kanban_view_binding" model="ir.actions.act_window.view">
+        <field name="sequence" eval="2" />
+        <field name="view_mode">kanban</field>
+        <field name="view_id" ref="purchase_learn.purchase_learn_kanban_view_id" />
+        <field name="act_window_id" ref="purchase_learn.purchase_learn_action_id" />
+    </record>
+
+    <record id="purchase_learn_form_view_binding" model="ir.actions.act_window.view">
+        <field name="sequence" eval="3" />
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="purchase_learn.purchase_learn_form_view_id" />
+        <field name="act_window_id" ref="purchase_learn.purchase_learn_action_id" />
+    </record>
+    
+
+    <record id="brand_learn_action_id" model="ir.actions.act_window">
+        <field name="name">Brand</field>
+        <field name="res_model">brand.learn</field>
+    </record>
+
+    <record id="brand_learn_tree_view_binding" model="ir.actions.act_window.view">
+        <field name="sequence" eval="1" />
+        <field name="view_mode">tree</field>
+        <field name="view_id" ref="purchase_learn.purchase_brand_tree_views_id" />
+        <field name="act_window_id" ref="purchase_learn.brand_learn_action_id" />
+    </record>
+
+    <record id="action_purchase_learn_wizard_report_id" model="ir.actions.act_window">
+        <field name="name">Report Purchase</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">purchase.learn.report.wizard</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="purchase_learn.purchase_learn_wizard_report_id" />
+        <field name="target">current</field>
+        <field name="help" type="html">
+            <p class="oe_view_nocontent_create" >No Data</p>
+        </field>
+    </record>
+</odoo>
