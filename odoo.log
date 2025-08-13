@@ -22,3 +22,909 @@ ModuleNotFoundError: No module named 'odoo.addons.web'
 2025-08-10 11:06:57,329 11248 INFO ? odoo.service.server: Initiating shutdown 
 2025-08-10 11:06:57,329 11248 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
 2025-08-10 11:06:57,460 11248 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 2 connections  
+2025-08-11 15:51:00,875 9412 INFO ? odoo: Odoo version 17.0 
+2025-08-11 15:51:00,875 9412 INFO ? odoo: Using configuration file at C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo.conf 
+2025-08-11 15:51:00,875 9412 INFO ? odoo: addons paths: ['C:\\Users\\THINKPAD T1\\OneDrive\\Documents\\odoo17\\odoo\\addons', 'c:\\users\\thinkpad t1\\appdata\\local\\openerp s.a\\odoo\\addons\\17.0', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\addons', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\odoo', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\odoo\\addons', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\odoo\\costum_addons'] 
+2025-08-11 15:51:00,875 9412 INFO ? odoo: database: nezzy@localhost:5432 
+2025-08-11 15:51:01,064 9412 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe 
+2025-08-11 15:51:01,347 9412 INFO ? odoo.service.server: HTTP service (werkzeug) running on ThinkpadT14:8069 
+2025-08-11 15:51:20,400 9412 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'employee', defaulting to LGPL-3 
+2025-08-11 15:51:20,402 9412 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'guest_book', defaulting to LGPL-3 
+2025-08-11 15:51:20,418 9412 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'odoo_project', defaulting to LGPL-3 
+2025-08-11 15:51:20,499 9412 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-08-11 15:51:20,506 9412 INFO ? odoo.modules.loading: 1 modules loaded in 0.00s, 0 queries (+0 extra) 
+2025-08-11 15:51:20,509 9412 INFO ? odoo.modules.loading: loading 93 modules... 
+2025-08-11 15:51:26,627 9412 WARNING ? odoo.models: The model odoo.project.line has no _description 
+2025-08-11 15:51:27,301 9412 WARNING ? odoo.api.create: The model odoo.addons.purchase_learn.models.purchase_learn is not overriding the create method in batch 
+2025-08-11 15:51:27,303 9412 WARNING ? odoo.models: The model purchase.learn has no _description 
+2025-08-11 15:51:27,303 9412 WARNING ? odoo.models: The model purchase.learn.line has no _description 
+2025-08-11 15:51:27,304 9412 WARNING ? odoo.models: The model brand.learn has no _description 
+2025-08-11 15:51:27,304 9412 WARNING ? odoo.models: The model purchase.learn.report.wizard has no _description 
+2025-08-11 15:51:27,697 9412 WARNING ? odoo.models: The model odoo.project.line has no _description 
+2025-08-11 15:51:27,697 9412 WARNING ? odoo.models: The model purchase.learn has no _description 
+2025-08-11 15:51:27,697 9412 WARNING ? odoo.models: The model purchase.learn.line has no _description 
+2025-08-11 15:51:27,697 9412 WARNING ? odoo.models: The model brand.learn has no _description 
+2025-08-11 15:51:27,697 9412 WARNING ? odoo.models: The model purchase.learn.report.wizard has no _description 
+2025-08-11 15:51:37,191 9412 INFO ? odoo.modules.loading: 93 modules loaded in 16.68s, 0 queries (+1 extra) 
+2025-08-11 15:51:37,381 9412 INFO ? odoo.modules.loading: Modules loaded. 
+2025-08-11 15:51:37,389 9412 INFO ? odoo.modules.registry: Registry loaded in 16.968s 
+2025-08-11 15:51:37,433 9412 INFO dbodoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-08-11 15:51:37,486 9412 INFO dbodoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-08-11 15:51:37,966 9412 WARNING dbodoo odoo.modules.module: Missing `license` key in manifest for 'employee', defaulting to LGPL-3 
+2025-08-11 15:51:37,969 9412 WARNING dbodoo odoo.modules.module: Missing `license` key in manifest for 'odoo_project', defaulting to LGPL-3 
+2025-08-11 15:51:37,984 9412 WARNING dbodoo odoo.modules.module: Missing `license` key in manifest for 'guest_book', defaulting to LGPL-3 
+2025-08-11 15:51:38,227 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:51:38] "GET /web/database/selector HTTP/1.1" 200 - 24 0.108 18.574
+2025-08-11 15:51:38,468 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:51:38] "GET /web?debug=1 HTTP/1.1" 200 - 82 0.161 14.050
+2025-08-11 15:51:38,557 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:51:38] "GET /web?debug=1 HTTP/1.1" 200 - 13 0.035 0.033
+2025-08-11 15:51:45,464 9412 INFO dbodoo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/eca235a/web.assets_web.min.css (id:671) 
+2025-08-11 15:51:45,466 9412 INFO dbodoo odoo.addons.base.models.assetsbundle: Deleting attachments [666] (matching /web/assets/_______/web.assets_web.min.css) because it was replaced with /web/assets/eca235a/web.assets_web.min.css 
+2025-08-11 15:51:45,574 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:51:45] "GET /web/assets/eca235a/web.assets_web.min.css HTTP/1.1" 200 - 17 0.095 6.691
+2025-08-11 15:52:01,665 9412 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Procurement: run scheduler`. 
+2025-08-11 15:52:01,738 9412 INFO dbodoo odoo.addons.stock.models.stock_rule: _run_scheduler_tasks is finished and committed 
+2025-08-11 15:52:01,750 9412 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Procurement: run scheduler` (0.086s). 
+2025-08-11 15:52:06,541 9412 INFO dbodoo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/494be3d/web.assets_web.min.js (id:672) 
+2025-08-11 15:52:06,542 9412 INFO dbodoo odoo.addons.base.models.assetsbundle: Deleting attachments [667] (matching /web/assets/_______/web.assets_web.min.js) because it was replaced with /web/assets/494be3d/web.assets_web.min.js 
+2025-08-11 15:52:07,287 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:52:07] "GET /web/assets/494be3d/web.assets_web.min.js HTTP/1.1" 200 - 13 0.057 28.313
+2025-08-11 15:52:08,038 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 15:52:08] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.016
+2025-08-11 15:52:08,063 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:52:08] "POST /mail/init_messaging HTTP/1.1" 200 - 55 0.084 0.036
+2025-08-11 15:52:08,070 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:52:08] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 16 0.021 0.072
+2025-08-11 15:52:08,092 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:52:08] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.012 0.010
+2025-08-11 15:52:08,130 9412 INFO dbodoo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/449490f/bus.websocket_worker_assets.min.js (id:673) 
+2025-08-11 15:52:08,131 9412 INFO dbodoo odoo.addons.base.models.assetsbundle: Deleting attachments [668] (matching /web/assets/_______/bus.websocket_worker_assets.min.js) because it was replaced with /web/assets/449490f/bus.websocket_worker_assets.min.js 
+2025-08-11 15:52:08,140 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:52:08] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 10 0.009 0.060
+2025-08-11 15:52:08,203 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:52:08] "GET /web/assets/494be3d/web.assets_web.min.js HTTP/1.1" 200 - 3 0.002 0.006
+2025-08-11 15:52:08,215 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:52:08] "POST /mail/load_message_failures HTTP/1.1" 200 - 3 0.005 0.005
+2025-08-11 15:52:08,465 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:52:08] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.001 0.005
+2025-08-11 15:52:08,491 9412 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-08-11 15:52:09,993 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:52:09] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.039
+2025-08-11 15:54:01,789 9412 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2025-08-11 15:54:01,796 9412 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Snailmail: process letters queue` (0.007s). 
+2025-08-11 15:54:01,808 9412 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2025-08-11 15:54:01,814 9412 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `SMS: SMS Queue Manager` (0.006s). 
+2025-08-11 15:54:01,823 9412 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete: Sync with remote DB`. 
+2025-08-11 15:54:01,826 9412 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Partner Autocomplete: Sync with remote DB` (0.003s). 
+2025-08-11 15:54:01,833 9412 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2025-08-11 15:54:04,689 9412 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2025-08-11 15:54:04,704 9412 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Notification: Send scheduled message notifications` (0.015s). 
+2025-08-11 15:54:05,931 9412 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Mail: Email Queue Manager` (4.098s). 
+2025-08-11 15:57:05,903 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:57:05] "POST /web/action/load HTTP/1.1" 200 - 6 0.018 0.006
+2025-08-11 15:57:05,906 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:57:05] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.008 0.019
+2025-08-11 15:57:06,155 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 15:57:06] "POST /mail/inbox/messages HTTP/1.1" 200 - 7 0.003 0.008
+2025-08-11 16:00:06,013 9412 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Delete Data Draft Purchase`. 
+2025-08-11 16:00:06,021 9412 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Delete Data Draft Purchase` (0.008s). 
+2025-08-11 16:13:43,403 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:43] "POST /web/action/load HTTP/1.1" 200 - 10 0.012 0.011
+2025-08-11 16:13:43,802 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:43] "POST /web/dataset/call_kw/sale.order/get_views HTTP/1.1" 200 - 115 0.070 0.086
+2025-08-11 16:13:43,837 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:43] "POST /web/dataset/call_kw/sale.order/web_search_read HTTP/1.1" 200 - 6 0.007 0.009
+2025-08-11 16:13:44,133 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:44] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.001 0.004
+2025-08-11 16:13:44,513 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:44] "POST /onboarding/sale_quotation HTTP/1.1" 200 - 26 0.028 0.029
+2025-08-11 16:13:44,712 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:44] "GET /web/image/res.users/1/avatar_128 HTTP/1.1" 304 - 9 0.007 0.010
+2025-08-11 16:13:45,061 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:45] "GET /web/image/onboarding.onboarding.step/2/step_image HTTP/1.1" 304 - 5 0.027 0.167
+2025-08-11 16:13:45,061 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:45] "GET /web/image/res.users/4/avatar_128 HTTP/1.1" 304 - 9 0.020 0.178
+2025-08-11 16:13:45,066 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:45] "GET /web/image/res.users/5/avatar_128 HTTP/1.1" 304 - 9 0.045 0.159
+2025-08-11 16:13:45,076 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:45] "GET /web/image/onboarding.onboarding.step/12/step_image HTTP/1.1" 304 - 4 0.004 0.052
+2025-08-11 16:13:45,078 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:45] "GET /web/image/onboarding.onboarding.step/3/step_image HTTP/1.1" 304 - 4 0.014 0.197
+2025-08-11 16:13:45,101 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:45] "GET /web/image/res.users/2/avatar_128 HTTP/1.1" 304 - 9 0.040 0.199
+2025-08-11 16:13:45,372 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:45] "GET /web/image/onboarding.onboarding.step/13/step_image HTTP/1.1" 304 - 4 0.002 0.005
+2025-08-11 16:13:45,798 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:45] "POST /web/dataset/call_kw/onboarding.onboarding.step/action_open_step_company_data HTTP/1.1" 200 - 3 0.009 0.003
+2025-08-11 16:13:46,079 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:46] "POST /web/dataset/call_kw/res.company/get_views HTTP/1.1" 200 - 11 0.016 0.024
+2025-08-11 16:13:46,151 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:46] "POST /web/dataset/call_kw/res.company/web_read HTTP/1.1" 200 - 19 0.014 0.020
+2025-08-11 16:13:46,432 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:46] "POST /mail/thread/data HTTP/1.1" 200 - 17 0.026 0.008
+2025-08-11 16:13:46,528 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:46] "POST /mail/thread/messages HTTP/1.1" 200 - 4 0.003 0.004
+2025-08-11 16:13:46,541 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:46] "GET /web/image?model=res.company&id=1&field=logo&unique=1754928826177 HTTP/1.1" 200 - 5 0.002 0.009
+2025-08-11 16:13:47,945 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:47] "POST /web/dataset/call_kw/res.partner/get_formview_action HTTP/1.1" 200 - 1 0.002 0.004
+2025-08-11 16:13:48,277 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:48] "POST /onboarding/sale_quotation HTTP/1.1" 200 - 9 0.002 0.014
+2025-08-11 16:13:48,410 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:48] "POST /web/dataset/call_kw/res.partner/get_views HTTP/1.1" 200 - 64 0.087 0.060
+2025-08-11 16:13:48,645 9412 INFO dbodoo odoo.addons.phone_validation.tools.phone_validation: The `phonenumbers` Python module is not installed, contact numbers will not be verified. Please install the `phonenumbers` Python module. 
+2025-08-11 16:13:48,683 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:48] "POST /web/dataset/call_kw/res.partner/web_read HTTP/1.1" 200 - 70 0.091 0.062
+2025-08-11 16:13:48,804 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:48] "POST /mail/thread/data HTTP/1.1" 200 - 18 0.027 0.016
+2025-08-11 16:13:49,083 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:49] "POST /mail/thread/messages HTTP/1.1" 200 - 4 0.002 0.004
+2025-08-11 16:13:49,125 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:49] "GET /web/image?model=res.partner&id=1&field=avatar_128&unique=1753975603000 HTTP/1.1" 200 - 7 0.006 0.011
+2025-08-11 16:13:53,862 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:53] "POST /web/dataset/call_kw/sale.order/web_search_read HTTP/1.1" 200 - 2 0.002 0.003
+2025-08-11 16:13:54,134 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:54] "POST /onboarding/sale_quotation HTTP/1.1" 200 - 9 0.004 0.008
+2025-08-11 16:13:54,227 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:54] "GET /web/image/res.users/3/avatar_128 HTTP/1.1" 304 - 9 0.006 0.018
+2025-08-11 16:13:55,193 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:55] "POST /web/dataset/call_kw/onboarding.onboarding.step/action_open_step_company_data HTTP/1.1" 200 - 2 0.000 0.004
+2025-08-11 16:13:55,528 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:55] "POST /web/dataset/call_kw/res.company/web_read HTTP/1.1" 200 - 12 0.004 0.014
+2025-08-11 16:13:55,788 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:55] "POST /mail/thread/data HTTP/1.1" 200 - 10 0.009 0.010
+2025-08-11 16:13:55,873 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:55] "POST /mail/thread/messages HTTP/1.1" 200 - 4 0.004 0.008
+2025-08-11 16:13:55,876 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:13:55] "GET /web/image?model=res.company&id=1&field=logo&unique=1754928835534 HTTP/1.1" 200 - 5 0.006 0.008
+2025-08-11 16:14:01,108 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:01] "POST /web/dataset/call_kw/res.company/web_save HTTP/1.1" 200 - 36 0.045 0.040
+2025-08-11 16:14:01,460 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:01] "POST /mail/thread/messages HTTP/1.1" 200 - 4 0.027 0.012
+2025-08-11 16:14:01,471 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:01] "POST /web/session/get_session_info HTTP/1.1" 200 - 13 0.020 0.032
+2025-08-11 16:14:01,477 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:01] "POST /web/dataset/call_kw/res.company/read HTTP/1.1" 200 - 3 0.021 0.014
+2025-08-11 16:14:01,488 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:01] "POST /mail/thread/data HTTP/1.1" 200 - 10 0.042 0.022
+2025-08-11 16:14:01,711 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:01] "GET /web?debug=1&reload=true HTTP/1.1" 200 - 13 0.004 0.024
+2025-08-11 16:14:02,548 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:02] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 3 0.007 0.023
+2025-08-11 16:14:02,612 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:02] "POST /web/action/load HTTP/1.1" 200 - 10 0.038 0.058
+2025-08-11 16:14:02,907 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:02] "POST /mail/init_messaging HTTP/1.1" 200 - 32 0.018 0.033
+2025-08-11 16:14:03,103 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:03] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 8 0.011 0.008
+2025-08-11 16:14:03,139 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:03] "POST /mail/load_message_failures HTTP/1.1" 200 - 3 0.003 0.006
+2025-08-11 16:14:03,150 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:03] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.000 0.007
+2025-08-11 16:14:03,238 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:03] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 7 0.002 0.009
+2025-08-11 16:14:04,547 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:04] "POST /web/dataset/call_kw/sale.order/get_views HTTP/1.1" 200 - 3 0.004 0.025
+2025-08-11 16:14:04,584 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:04] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.013 0.028
+2025-08-11 16:14:04,789 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:04] "POST /web/dataset/call_kw/sale.order/web_search_read HTTP/1.1" 200 - 2 0.003 0.005
+2025-08-11 16:14:04,919 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:04] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 1 0.002 0.003
+2025-08-11 16:14:04,943 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:04] "POST /onboarding/sale_quotation HTTP/1.1" 200 - 9 0.005 0.012
+2025-08-11 16:14:05,399 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:05] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.004
+2025-08-11 16:14:10,103 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:10] "GET /web/image/onboarding.onboarding.step/2/step_image HTTP/1.1" 304 - 4 0.004 0.013
+2025-08-11 16:14:10,481 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:10] "GET /web/image/onboarding.onboarding.step/3/step_image HTTP/1.1" 304 - 4 0.010 0.074
+2025-08-11 16:14:10,481 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:10] "GET /web/image/onboarding.onboarding.step/12/step_image HTTP/1.1" 304 - 4 0.019 0.063
+2025-08-11 16:14:10,482 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:10] "GET /web/image/res.users/3/avatar_128 HTTP/1.1" 304 - 9 0.032 0.055
+2025-08-11 16:14:10,483 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:10] "GET /web/image/res.users/1/avatar_128 HTTP/1.1" 304 - 9 0.036 0.051
+2025-08-11 16:14:10,483 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:10] "GET /web/image/res.users/5/avatar_128 HTTP/1.1" 304 - 9 0.028 0.057
+2025-08-11 16:14:10,491 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:10] "GET /web/image/onboarding.onboarding.step/13/step_image HTTP/1.1" 304 - 4 0.006 0.070
+2025-08-11 16:14:10,841 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:10] "GET /web/image/res.users/4/avatar_128 HTTP/1.1" 304 - 9 0.025 0.018
+2025-08-11 16:14:10,841 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:10] "GET /web/image/res.users/2/avatar_128 HTTP/1.1" 304 - 9 0.015 0.027
+2025-08-11 16:14:13,306 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:13] "POST /web/dataset/call_kw/onboarding.onboarding.step/action_open_step_base_document_layout HTTP/1.1" 200 - 3 0.009 0.003
+2025-08-11 16:14:13,597 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:13] "POST /web/dataset/call_kw/base.document.layout/get_views HTTP/1.1" 200 - 10 0.011 0.023
+2025-08-11 16:14:13,850 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:13] "POST /web/dataset/call_kw/base.document.layout/onchange HTTP/1.1" 200 - 53 0.052 0.172
+2025-08-11 16:14:13,915 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:13] "POST /web/dataset/call_kw/report.layout/web_search_read HTTP/1.1" 200 - 2 0.001 0.004
+2025-08-11 16:14:14,189 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:14] "POST /web/dataset/call_kw/report.paperformat/name_search HTTP/1.1" 200 - 3 0.002 0.004
+2025-08-11 16:14:14,255 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:14] "GET /web/bundle/web_editor.backend_assets_wysiwyg?lang=en_US&debug=1 HTTP/1.1" 200 - 7 0.002 0.062
+2025-08-11 16:14:15,197 9412 INFO dbodoo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/c05cc92/web_editor.backend_assets_wysiwyg.min.css (id:674) 
+2025-08-11 16:14:15,198 9412 INFO dbodoo odoo.addons.base.models.assetsbundle: Deleting attachments [632] (matching /web/assets/_______/web_editor.backend_assets_wysiwyg.min.css) because it was replaced with /web/assets/c05cc92/web_editor.backend_assets_wysiwyg.min.css 
+2025-08-11 16:14:15,224 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:15] "GET /web/assets/c05cc92/web_editor.backend_assets_wysiwyg.min.css HTTP/1.1" 200 - 10 0.017 0.946
+2025-08-11 16:14:16,458 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:16] "POST /web/dataset/call_kw/onboarding.onboarding.step/action_open_step_base_document_layout HTTP/1.1" 200 - 2 0.002 0.004
+2025-08-11 16:14:16,878 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:16] "POST /web/dataset/call_kw/base.document.layout/onchange HTTP/1.1" 200 - 13 0.036 0.063
+2025-08-11 16:14:17,110 9412 INFO dbodoo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/b77d24b/web_editor.backend_assets_wysiwyg.min.js (id:675) 
+2025-08-11 16:14:17,110 9412 INFO dbodoo odoo.addons.base.models.assetsbundle: Deleting attachments [633] (matching /web/assets/_______/web_editor.backend_assets_wysiwyg.min.js) because it was replaced with /web/assets/b77d24b/web_editor.backend_assets_wysiwyg.min.js 
+2025-08-11 16:14:17,165 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:17] "GET /web/assets/b77d24b/web_editor.backend_assets_wysiwyg.min.js HTTP/1.1" 200 - 10 0.055 1.949
+2025-08-11 16:14:17,206 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:17] "POST /web/dataset/call_kw/report.layout/web_search_read HTTP/1.1" 200 - 2 0.003 0.005
+2025-08-11 16:14:17,209 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:17] "POST /web/dataset/call_kw/report.paperformat/name_search HTTP/1.1" 200 - 2 0.004 0.006
+2025-08-11 16:14:17,578 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:17] "POST /web/dataset/call_kw/ir.ui.view/render_public_asset HTTP/1.1" 200 - 8 0.012 0.017
+2025-08-11 16:14:23,762 9412 INFO dbodoo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/8708d4f/web.report_assets_common.min.css (id:676) 
+2025-08-11 16:14:23,821 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:23] "GET /web/assets/8708d4f/web.report_assets_common.min.css HTTP/1.1" 200 - 10 0.041 5.965
+2025-08-11 16:14:24,144 9412 INFO dbodoo odoo.modules.registry: Caches invalidated, signaling through the database: ['assets'] 
+2025-08-11 16:14:24,145 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:24] "POST /web/dataset/call_kw/base.document.layout/web_save HTTP/1.1" 200 - 79 0.080 0.395
+2025-08-11 16:14:24,170 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:24] "GET /web/static/fonts/lato/Lato-Bol-webfont.woff HTTP/1.1" 200 - 0 0.000 0.009
+2025-08-11 16:14:24,504 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:24] "GET /web/image?model=base.document.layout&id=1&field=logo&unique=1754928864151 HTTP/1.1" 200 - 7 0.009 0.013
+2025-08-11 16:14:24,532 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:24] "POST /web/dataset/call_button HTTP/1.1" 200 - 18 0.041 0.012
+2025-08-11 16:14:29,635 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:29] "POST /onboarding/sale_quotation HTTP/1.1" 200 - 25 0.045 4.734
+2025-08-11 16:14:29,742 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:29] "POST /web/dataset/call_kw/onboarding.onboarding.step/action_open_step_sale_order_confirmation HTTP/1.1" 200 - 9 0.038 0.032
+2025-08-11 16:14:29,757 9412 INFO dbodoo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/c3c2315/web.report_assets_common.min.css (id:677) 
+2025-08-11 16:14:29,758 9412 INFO dbodoo odoo.addons.base.models.assetsbundle: Deleting attachments [676] (matching /web/assets/_______/web.report_assets_common.min.css) because it was replaced with /web/assets/c3c2315/web.report_assets_common.min.css 
+2025-08-11 16:14:29,787 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:29] "GET /web/assets/c3c2315/web.report_assets_common.min.css HTTP/1.1" 200 - 12 0.033 5.291
+2025-08-11 16:14:30,018 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:30] "POST /web/dataset/call_kw/sale.payment.provider.onboarding.wizard/get_views HTTP/1.1" 200 - 8 0.011 0.011
+2025-08-11 16:14:30,116 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:30] "POST /web/dataset/call_kw/sale.payment.provider.onboarding.wizard/onchange HTTP/1.1" 200 - 26 0.035 0.023
+2025-08-11 16:14:30,353 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:30] "GET /base/static/img/onboarding_confetti.svg HTTP/1.1" 200 - 0 0.000 0.013
+2025-08-11 16:14:32,017 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:32] "POST /web/dataset/call_kw/sale.payment.provider.onboarding.wizard/web_save HTTP/1.1" 200 - 8 0.006 0.011
+2025-08-11 16:14:32,290 9412 INFO dbodoo odoo.models.unlink: User #2 deleted sale.payment.provider.onboarding.wizard records with IDs: [1] 
+2025-08-11 16:14:32,330 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:32] "POST /web/dataset/call_button HTTP/1.1" 200 - 44 0.033 0.031
+2025-08-11 16:14:32,352 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:32] "POST /onboarding/sale_quotation HTTP/1.1" 200 - 14 0.004 0.013
+2025-08-11 16:14:34,412 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:34] "POST /web/dataset/call_kw/web_tour.tour/consume HTTP/1.1" 200 - 3 0.008 0.007
+2025-08-11 16:14:34,417 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:34] "GET /web/static/img/smile.svg HTTP/1.1" 200 - 0 0.000 0.018
+2025-08-11 16:14:34,725 9412 INFO dbodoo odoo.addons.base.models.ir_actions_report: Generating PDF on Windows platform require DPI >= 96. Using 96 instead. 
+2025-08-11 16:14:36,962 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:36] "GET /web/assets/c3c2315/web.report_assets_common.min.css HTTP/1.1" 200 - 3 0.002 0.010
+2025-08-11 16:14:36,980 9412 INFO dbodoo odoo.addons.base.models.assetsbundle: Generating a new asset bundle attachment /web/assets/e9542d3/web.report_assets_pdf.min.css (id:678) 
+2025-08-11 16:14:36,999 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:36] "GET /web/assets/e9542d3/web.report_assets_pdf.min.css HTTP/1.1" 200 - 8 0.008 0.041
+2025-08-11 16:14:37,030 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:37] "GET /web/static/fonts/lato/Lato-Reg-webfont.woff HTTP/1.1" 200 - 0 0.000 0.014
+2025-08-11 16:14:39,126 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:39] "GET /web/static/fonts/lato/Lato-Bol-webfont.woff HTTP/1.1" 200 - 0 0.000 0.006
+2025-08-11 16:14:39,135 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:39] "GET /web/static/fonts/lato/Lato-Hai-webfont.woff HTTP/1.1" 200 - 0 0.000 0.016
+2025-08-11 16:14:39,136 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:39] "GET /web/static/fonts/lato/Lato-Bla-webfont.woff HTTP/1.1" 200 - 0 0.000 0.016
+2025-08-11 16:14:39,140 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:39] "GET /web/static/fonts/lato/Lato-Lig-webfont.woff HTTP/1.1" 200 - 0 0.000 0.020
+2025-08-11 16:14:41,695 9412 INFO dbodoo odoo.addons.base.models.ir_actions_report: The PDF report has been generated for model: sale.order, records [1]. 
+2025-08-11 16:14:46,029 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:46] "POST /web/dataset/call_kw/onboarding.onboarding.step/action_open_step_sample_quotation HTTP/1.1" 200 - 313 0.273 11.482
+2025-08-11 16:14:46,092 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:46] "POST /web/dataset/call_kw/sale.order/get_views HTTP/1.1" 200 - 9 0.006 0.034
+2025-08-11 16:14:46,444 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:46] "POST /web/dataset/call_kw/sale.order/onchange HTTP/1.1" 200 - 19 0.012 0.018
+2025-08-11 16:14:46,690 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:46] "GET /web/image?field=avatar_128&id=3&model=res.partner&unique=2025-08-09%2015%3A09%3A26 HTTP/1.1" 200 - 8 0.008 0.015
+2025-08-11 16:14:48,380 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:48] "POST /web/dataset/call_kw/res.partner/name_search HTTP/1.1" 200 - 5 0.003 0.010
+2025-08-11 16:14:53,202 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:53] "POST /web/dataset/call_kw/sale.order/onchange HTTP/1.1" 200 - 22 0.018 0.026
+2025-08-11 16:14:54,392 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:54] "POST /web/dataset/call_kw/res.partner/name_search HTTP/1.1" 200 - 4 0.003 0.006
+2025-08-11 16:14:55,069 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:55] "POST /web/dataset/call_kw/res.partner/name_search HTTP/1.1" 200 - 4 0.003 0.007
+2025-08-11 16:14:55,425 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:55] "POST /web/dataset/call_kw/res.partner/name_search HTTP/1.1" 200 - 4 0.001 0.008
+2025-08-11 16:14:56,271 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:56] "POST /web/dataset/call_kw/res.partner/name_search HTTP/1.1" 200 - 4 0.004 0.009
+2025-08-11 16:14:57,470 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:57] "POST /web/dataset/call_kw/sale.order.line/onchange HTTP/1.1" 200 - 4 0.003 0.010
+2025-08-11 16:14:59,073 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:14:59] "POST /web/dataset/call_kw/product.template/name_search HTTP/1.1" 200 - 3 0.003 0.004
+2025-08-11 16:15:00,208 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:00] "POST /web/dataset/call_kw/product.template/get_single_product_variant HTTP/1.1" 200 - 9 0.021 0.015
+2025-08-11 16:15:00,583 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:00] "POST /web/dataset/call_kw/sale.order.line/onchange HTTP/1.1" 200 - 33 0.029 0.024
+2025-08-11 16:15:00,818 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:00] "POST /web/dataset/call_kw/sale.order/onchange HTTP/1.1" 200 - 26 0.011 0.028
+2025-08-11 16:15:07,636 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:07] "POST /web/dataset/call_kw/sale.order/web_save HTTP/1.1" 200 - 70 0.072 0.055
+2025-08-11 16:15:08,017 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:08] "POST /mail/thread/data HTTP/1.1" 200 - 23 0.026 0.029
+2025-08-11 16:15:08,026 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:08] "POST /web/dataset/call_button HTTP/1.1" 200 - 13 0.048 0.014
+2025-08-11 16:15:08,067 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:08] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.070 0.021
+2025-08-11 16:15:08,235 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:08] "POST /web/dataset/call_kw/mail.compose.message/get_views HTTP/1.1" 200 - 12 0.008 0.014
+2025-08-11 16:15:08,430 9412 INFO dbodoo odoo.addons.base.models.ir_actions_report: Generating PDF on Windows platform require DPI >= 96. Using 96 instead. 
+2025-08-11 16:15:10,573 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:10] "GET /web/assets/e9542d3/web.report_assets_pdf.min.css HTTP/1.1" 200 - 3 0.003 0.005
+2025-08-11 16:15:10,573 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:10] "GET /web/assets/c3c2315/web.report_assets_common.min.css HTTP/1.1" 200 - 3 0.001 0.008
+2025-08-11 16:15:10,611 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:10] "GET /web/static/fonts/lato/Lato-Reg-webfont.woff HTTP/1.1" 200 - 0 0.000 0.002
+2025-08-11 16:15:12,718 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:12] "GET /web/static/fonts/lato/Lato-Lig-webfont.woff HTTP/1.1" 200 - 0 0.000 0.007
+2025-08-11 16:15:12,718 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:12] "GET /web/static/fonts/lato/Lato-Hai-webfont.woff HTTP/1.1" 200 - 0 0.000 0.006
+2025-08-11 16:15:12,720 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:12] "GET /web/static/fonts/lato/Lato-Bla-webfont.woff HTTP/1.1" 200 - 0 0.000 0.007
+2025-08-11 16:15:12,720 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:12] "GET /web/static/fonts/lato/Lato-Bol-webfont.woff HTTP/1.1" 200 - 0 0.000 0.008
+2025-08-11 16:15:15,166 9412 INFO dbodoo odoo.addons.base.models.ir_actions_report: The PDF report has been generated for model: sale.order, records [2]. 
+2025-08-11 16:15:15,182 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:15] "POST /web/dataset/call_kw/mail.compose.message/onchange HTTP/1.1" 200 - 97 0.031 6.811
+2025-08-11 16:15:26,229 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:26] "GET /web/static/img/mimetypes/pdf.svg HTTP/1.1" 200 - 0 0.000 0.019
+2025-08-11 16:15:26,538 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:26] "POST /web/dataset/call_kw/res.partner/get_formview_id HTTP/1.1" 200 - 1 0.000 0.004
+2025-08-11 16:15:26,887 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:26] "POST /web/dataset/call_kw/res.partner/get_views HTTP/1.1" 200 - 8 0.015 0.012
+2025-08-11 16:15:27,135 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:27] "POST /web/dataset/call_kw/res.partner/web_read HTTP/1.1" 200 - 9 0.005 0.013
+2025-08-11 16:15:27,234 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:27] "GET /web/image?model=res.partner&id=8&field=avatar_128&unique=1754646403000 HTTP/1.1" 200 - 7 0.006 0.018
+2025-08-11 16:15:36,284 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:36] "POST /web/dataset/call_kw/res.partner/onchange HTTP/1.1" 200 - 12 0.008 0.011
+2025-08-11 16:15:37,752 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:37] "POST /web/dataset/call_kw/res.partner/web_save HTTP/1.1" 200 - 19 0.021 0.017
+2025-08-11 16:15:37,990 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:37] "POST /web/dataset/call_kw/res.partner/web_read HTTP/1.1" 200 - 4 0.004 0.005
+2025-08-11 16:15:39,326 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:39] "POST /web/dataset/call_kw/mail.compose.message/web_save HTTP/1.1" 200 - 12 0.008 0.018
+2025-08-11 16:15:39,764 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:39] "POST /web/dataset/call_kw/web_tour.tour/consume HTTP/1.1" 200 - 2 0.002 0.006
+2025-08-11 16:15:43,902 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:43] "POST /web/dataset/call_button HTTP/1.1" 200 - 80 0.058 4.194
+2025-08-11 16:15:43,949 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:43] "POST /mail/thread/messages HTTP/1.1" 200 - 23 0.022 0.020
+2025-08-11 16:15:44,373 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:44] "POST /web/dataset/call_kw/sale.order/web_read HTTP/1.1" 200 - 45 0.095 0.054
+2025-08-11 16:15:44,720 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:44] "POST /mail/thread/data HTTP/1.1" 200 - 26 0.013 0.021
+2025-08-11 16:15:44,956 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:44] "POST /web/dataset/call_kw/ir.attachment/register_as_main_attachment HTTP/1.1" 200 - 4 0.000 0.006
+2025-08-11 16:15:48,140 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:48] "POST /web/action/load HTTP/1.1" 200 - 8 0.010 0.009
+2025-08-11 16:15:48,511 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:48] "POST /web/dataset/call_kw/utm.campaign/get_views HTTP/1.1" 200 - 20 0.013 0.022
+2025-08-11 16:15:48,733 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:48] "POST /web/dataset/call_kw/utm.campaign/web_search_read HTTP/1.1" 200 - 3 0.007 0.002
+2025-08-11 16:15:52,444 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:52] "POST /web/action/load HTTP/1.1" 200 - 10 0.011 0.008
+2025-08-11 16:15:52,920 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:52] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 89 0.041 0.101
+2025-08-11 16:15:53,042 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:53] "POST /web/dataset/call_kw/account.move/web_search_read HTTP/1.1" 200 - 2 0.002 0.003
+2025-08-11 16:15:53,257 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:53] "POST /onboarding/account_invoice HTTP/1.1" 200 - 18 0.005 0.012
+2025-08-11 16:15:53,370 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:53] "GET /web/image/onboarding.onboarding.step/4/step_image HTTP/1.1" 200 - 4 0.002 0.003
+2025-08-11 16:15:53,612 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:53] "GET /web/image/onboarding.onboarding.step/11/step_image HTTP/1.1" 200 - 4 0.000 0.014
+2025-08-11 16:15:55,749 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:55] "POST /web/dataset/call_kw/onboarding.onboarding.step/action_open_step_create_invoice HTTP/1.1" 200 - 3 0.007 0.005
+2025-08-11 16:15:56,099 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:56] "POST /web/dataset/call_kw/account.move/get_views HTTP/1.1" 200 - 9 0.004 0.035
+2025-08-11 16:15:56,418 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:56] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 37 0.030 0.061
+2025-08-11 16:15:58,206 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:15:58] "POST /web/dataset/call_kw/res.partner/name_search HTTP/1.1" 200 - 5 0.002 0.008
+2025-08-11 16:16:00,479 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:00] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 24 0.024 0.025
+2025-08-11 16:16:01,163 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:01] "POST /web/dataset/call_kw/account.move.line/onchange HTTP/1.1" 200 - 7 0.014 0.033
+2025-08-11 16:16:01,505 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:01] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 9 0.003 0.015
+2025-08-11 16:16:02,653 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:02] "POST /web/dataset/call_kw/product.product/name_search HTTP/1.1" 200 - 5 0.003 0.010
+2025-08-11 16:16:05,876 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:05] "POST /web/dataset/call_kw/account.move.line/onchange HTTP/1.1" 200 - 29 0.015 0.038
+2025-08-11 16:16:06,124 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:06] "POST /web/dataset/call_kw/account.move/onchange HTTP/1.1" 200 - 21 0.014 0.035
+2025-08-11 16:16:15,733 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:15] "POST /web/dataset/call_kw/account.move/web_save HTTP/1.1" 200 - 105 0.115 0.152
+2025-08-11 16:16:16,121 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:16] "POST /mail/thread/data HTTP/1.1" 200 - 25 0.038 0.027
+2025-08-11 16:16:16,188 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:16] "POST /mail/thread/messages HTTP/1.1" 200 - 19 0.067 0.029
+2025-08-11 16:16:16,329 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:16] "POST /web/dataset/call_button HTTP/1.1" 200 - 72 0.145 0.112
+2025-08-11 16:16:16,365 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:16] "POST /mail/thread/messages HTTP/1.1" 200 - 21 0.013 0.017
+2025-08-11 16:16:16,736 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:16] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 44 0.045 0.040
+2025-08-11 16:16:17,091 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:17] "POST /mail/thread/data HTTP/1.1" 200 - 23 0.016 0.017
+2025-08-11 16:16:17,969 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:17] "POST /web/dataset/call_button HTTP/1.1" 200 - 5 0.005 0.007
+2025-08-11 16:16:18,316 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:18] "POST /web/dataset/call_kw/account.move.send/get_views HTTP/1.1" 200 - 10 0.012 0.014
+2025-08-11 16:16:18,609 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:18] "POST /web/dataset/call_kw/account.move.send/onchange HTTP/1.1" 200 - 16 0.017 0.032
+2025-08-11 16:16:20,995 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:20] "POST /web/dataset/call_kw/account.move.send/web_save HTTP/1.1" 200 - 18 0.026 0.022
+2025-08-11 16:16:21,623 9412 INFO dbodoo odoo.addons.base.models.ir_actions_report: Generating PDF on Windows platform require DPI >= 96. Using 96 instead. 
+2025-08-11 16:16:23,798 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:23] "GET /web/assets/e9542d3/web.report_assets_pdf.min.css HTTP/1.1" 200 - 3 0.005 0.006
+2025-08-11 16:16:23,799 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:23] "GET /web/assets/c3c2315/web.report_assets_common.min.css HTTP/1.1" 200 - 3 0.000 0.011
+2025-08-11 16:16:23,836 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:23] "GET /web/static/fonts/lato/Lato-Reg-webfont.woff HTTP/1.1" 200 - 0 0.000 0.003
+2025-08-11 16:16:25,949 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:25] "GET /web/static/fonts/lato/Lato-Bol-webfont.woff HTTP/1.1" 200 - 0 0.000 0.005
+2025-08-11 16:16:25,949 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:25] "GET /web/static/fonts/lato/Lato-Hai-webfont.woff HTTP/1.1" 200 - 0 0.000 0.005
+2025-08-11 16:16:25,950 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:25] "GET /web/static/fonts/lato/Lato-Lig-webfont.woff HTTP/1.1" 200 - 0 0.000 0.007
+2025-08-11 16:16:25,951 9412 INFO ? werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:25] "GET /web/static/fonts/lato/Lato-Bla-webfont.woff HTTP/1.1" 200 - 0 0.000 0.007
+2025-08-11 16:16:28,552 9412 INFO dbodoo odoo.addons.base.models.ir_actions_report: The PDF report has been generated for model: account.move, records [2]. 
+2025-08-11 16:16:33,017 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:33] "POST /web/dataset/call_button HTTP/1.1" 200 - 181 0.136 11.561
+2025-08-11 16:16:33,058 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:33] "POST /mail/thread/messages HTTP/1.1" 200 - 25 0.013 0.020
+2025-08-11 16:16:33,404 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:33] "POST /web/dataset/call_kw/account.move/web_read HTTP/1.1" 200 - 48 0.028 0.046
+2025-08-11 16:16:33,769 9412 INFO dbodoo werkzeug: 127.0.0.1 - - [11/Aug/2025 16:16:33] "POST /mail/thread/data HTTP/1.1" 200 - 28 0.022 0.014
+2025-08-11 16:24:20,290 9412 INFO ? odoo.service.server: Initiating shutdown 
+2025-08-11 16:24:20,290 9412 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-08-11 16:24:20,463 9412 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 5 connections  
+2025-08-13 11:16:56,420 15608 INFO ? odoo: Odoo version 17.0 
+2025-08-13 11:16:56,421 15608 INFO ? odoo: Using configuration file at C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo.conf 
+2025-08-13 11:16:56,422 15608 INFO ? odoo: addons paths: ['C:\\Users\\THINKPAD T1\\OneDrive\\Documents\\odoo17\\odoo\\addons', 'c:\\users\\thinkpad t1\\appdata\\local\\openerp s.a\\odoo\\addons\\17.0', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\addons', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\odoo', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\odoo\\addons', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\odoo\\costum_addons'] 
+2025-08-13 11:16:56,422 15608 INFO ? odoo: database: nezzy@localhost:5432 
+2025-08-13 11:16:57,072 15608 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe 
+2025-08-13 11:16:57,680 15608 INFO ? odoo.service.server: HTTP service (werkzeug) running on ThinkpadT14:8069 
+2025-08-13 11:17:02,045 15608 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-08-13 11:17:02,061 15608 INFO ? odoo.modules.loading: 1 modules loaded in 0.02s, 0 queries (+0 extra) 
+2025-08-13 11:17:02,080 15608 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'odoo_project', defaulting to LGPL-3 
+2025-08-13 11:17:02,226 15608 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'guest_book', defaulting to LGPL-3 
+2025-08-13 11:17:02,425 15608 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'employee', defaulting to LGPL-3 
+2025-08-13 11:17:03,966 15608 INFO ? odoo.modules.loading: loading 93 modules... 
+2025-08-13 11:17:05,300 15608 WARNING ? odoo.models: The model odoo.project.line has no _description 
+2025-08-13 11:17:05,381 15608 WARNING ? odoo.api.create: The model odoo.addons.purchase_learn.models.purchase_learn is not overriding the create method in batch 
+2025-08-13 11:17:05,383 15608 WARNING ? odoo.models: The model purchase.learn has no _description 
+2025-08-13 11:17:05,383 15608 WARNING ? odoo.models: The model purchase.learn.line has no _description 
+2025-08-13 11:17:05,384 15608 WARNING ? odoo.models: The model brand.learn has no _description 
+2025-08-13 11:17:05,384 15608 WARNING ? odoo.models: The model purchase.learn.report.wizard has no _description 
+2025-08-13 11:17:05,455 15608 WARNING ? odoo.models: The model odoo.project.line has no _description 
+2025-08-13 11:17:05,457 15608 WARNING ? odoo.models: The model purchase.learn has no _description 
+2025-08-13 11:17:05,457 15608 WARNING ? odoo.models: The model purchase.learn.line has no _description 
+2025-08-13 11:17:05,457 15608 WARNING ? odoo.models: The model brand.learn has no _description 
+2025-08-13 11:17:05,457 15608 WARNING ? odoo.models: The model purchase.learn.report.wizard has no _description 
+2025-08-13 11:17:07,152 15608 INFO ? odoo.modules.loading: 93 modules loaded in 3.19s, 0 queries (+0 extra) 
+2025-08-13 11:17:07,340 15608 INFO ? odoo.modules.loading: Modules loaded. 
+2025-08-13 11:17:07,351 15608 INFO ? odoo.modules.registry: Registry loaded in 5.391s 
+2025-08-13 11:17:07,354 15608 INFO dbodoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-08-13 11:17:07,436 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:07] "GET / HTTP/1.1" 303 - 21 0.069 5.419
+2025-08-13 11:17:07,822 15608 WARNING dbodoo odoo.modules.module: Missing `license` key in manifest for 'odoo_project', defaulting to LGPL-3 
+2025-08-13 11:17:07,875 15608 WARNING dbodoo odoo.modules.module: Missing `license` key in manifest for 'guest_book', defaulting to LGPL-3 
+2025-08-13 11:17:07,886 15608 WARNING dbodoo odoo.modules.module: Missing `license` key in manifest for 'employee', defaulting to LGPL-3 
+2025-08-13 11:17:08,472 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:08] "GET /web HTTP/1.1" 200 - 80 0.161 0.868
+2025-08-13 11:17:19,581 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:19] "GET /web/webclient/load_menus/7d592d635daded2d908826f80cb14c30e066c126df46e979a5a33690e0c561ba HTTP/1.1" 200 - 2 0.012 10.765
+2025-08-13 11:17:19,589 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:19] "GET /web/webclient/translations/ece34ea9bdf5c2c89dcc34407c84eb58f0cb24cd?lang=en_US HTTP/1.1" 200 - 3 0.021 10.764
+2025-08-13 11:17:19,600 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:19] "GET /web/assets/eca235a/web.assets_web.min.css HTTP/1.1" 200 - 3 0.012 10.784
+2025-08-13 11:17:20,213 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:20] "GET /web/assets/494be3d/web.assets_web.min.js HTTP/1.1" 200 - 3 0.011 11.397
+2025-08-13 11:17:20,468 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:20] "GET /web/webclient/translations/ece34ea9bdf5c2c89dcc34407c84eb58f0cb24cd?lang=en_US HTTP/1.1" 200 - 2 0.001 0.006
+2025-08-13 11:17:20,817 15608 INFO ? werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:20] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.015
+2025-08-13 11:17:20,835 15608 INFO ? werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:20] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.016
+2025-08-13 11:17:20,943 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:20] "POST /web/action/load HTTP/1.1" 200 - 6 0.030 0.015
+2025-08-13 11:17:20,983 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:20] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 15 0.065 0.021
+2025-08-13 11:17:21,007 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:21] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 16 0.055 0.040
+2025-08-13 11:17:21,016 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:21] "POST /mail/init_messaging HTTP/1.1" 200 - 55 0.107 0.043
+2025-08-13 11:17:21,150 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:21] "POST /mail/load_message_failures HTTP/1.1" 200 - 13 0.011 0.011
+2025-08-13 11:17:21,311 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:21] "POST /mail/inbox/messages HTTP/1.1" 200 - 7 0.007 0.005
+2025-08-13 11:17:21,328 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:21] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.005 0.008
+2025-08-13 11:17:21,366 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:21] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 4 0.002 0.035
+2025-08-13 11:17:21,691 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 11:17:21] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.000 0.006
+2025-08-13 11:17:21,719 15608 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-08-13 11:17:57,784 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Base: Auto-vacuum internal data`. 
+2025-08-13 11:17:57,882 15608 INFO dbodoo odoo.addons.base.models.ir_attachment: filestore gc 20 checked, 7 removed 
+2025-08-13 11:17:57,943 15608 INFO dbodoo odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-08-13 11:17:57,991 15608 INFO dbodoo odoo.models.unlink: User #1 deleted base.document.layout records with IDs: [1] 
+2025-08-13 11:17:57,991 15608 INFO dbodoo odoo.addons.auth_totp.models.auth_totp: GC'd 0 totp devices entries 
+2025-08-13 11:17:58,007 15608 INFO dbodoo odoo.models.unlink: User #1 deleted bus.bus records with IDs: [698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713] 
+2025-08-13 11:17:58,071 15608 INFO dbodoo odoo.models.unlink: User #1 deleted mail.compose.message records with IDs: [1, 2] 
+2025-08-13 11:17:58,151 15608 INFO dbodoo odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-08-13 11:17:58,235 15608 INFO dbodoo odoo.models.unlink: User #1 deleted account.move.send records with IDs: [1] 
+2025-08-13 11:17:58,395 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Base: Auto-vacuum internal data` (0.595s). 
+2025-08-13 11:17:58,404 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2025-08-13 11:17:58,404 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Notification: Send scheduled message notifications` (0.000s). 
+2025-08-13 11:17:58,420 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2025-08-13 11:17:58,420 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Mail: Email Queue Manager` (0.000s). 
+2025-08-13 11:17:58,435 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2025-08-13 11:17:58,435 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `SMS: SMS Queue Manager` (0.000s). 
+2025-08-13 11:17:58,435 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete: Sync with remote DB`. 
+2025-08-13 11:17:58,435 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Partner Autocomplete: Sync with remote DB` (0.000s). 
+2025-08-13 11:17:58,451 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Base: Portal Users Deletion`. 
+2025-08-13 11:17:58,459 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Base: Portal Users Deletion` (0.008s). 
+2025-08-13 11:17:58,459 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Mail: send web push notification`. 
+2025-08-13 11:17:58,467 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Mail: send web push notification` (0.008s). 
+2025-08-13 11:17:58,467 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Discuss: channel member unmute`. 
+2025-08-13 11:17:58,484 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Discuss: channel member unmute` (0.017s). 
+2025-08-13 11:17:58,484 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Account: Post draft entries with auto_post enabled and accounting date up to today`. 
+2025-08-13 11:17:58,514 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Account: Post draft entries with auto_post enabled and accounting date up to today` (0.031s). 
+2025-08-13 11:17:58,514 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Notification: Delete Notifications older than 6 Month`. 
+2025-08-13 11:17:58,530 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Notification: Delete Notifications older than 6 Month` (0.016s). 
+2025-08-13 11:17:58,530 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Users: Notify About Unregistered Users`. 
+2025-08-13 11:17:58,530 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Users: Notify About Unregistered Users` (0.000s). 
+2025-08-13 11:17:58,546 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Send invoices automatically`. 
+2025-08-13 11:17:58,546 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Send invoices automatically` (0.000s). 
+2025-08-13 11:17:58,562 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Sales: Send pending emails`. 
+2025-08-13 11:17:58,562 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Sales: Send pending emails` (0.000s). 
+2025-08-13 11:17:58,578 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `HR Employee: check work permit validity`. 
+2025-08-13 11:17:58,583 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `HR Employee: check work permit validity` (0.005s). 
+2025-08-13 11:17:58,594 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Digest Emails`. 
+2025-08-13 11:17:58,594 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Digest Emails` (0.000s). 
+2025-08-13 11:17:58,594 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Procurement: run scheduler`. 
+2025-08-13 11:17:58,625 15608 INFO dbodoo odoo.addons.stock.models.stock_rule: _run_scheduler_tasks is finished and committed 
+2025-08-13 11:17:58,641 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Procurement: run scheduler` (0.048s). 
+2025-08-13 11:17:58,641 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2025-08-13 11:17:58,657 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Snailmail: process letters queue` (0.016s). 
+2025-08-13 11:17:58,660 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Delete Data Draft Purchase`. 
+2025-08-13 11:17:58,673 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Delete Data Draft Purchase` (0.013s). 
+2025-08-13 11:53:59,004 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2025-08-13 11:53:59,020 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Notification: Send scheduled message notifications` (0.016s). 
+2025-08-13 11:53:59,043 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2025-08-13 11:53:59,052 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Mail: Email Queue Manager` (0.010s). 
+2025-08-13 11:53:59,052 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete: Sync with remote DB`. 
+2025-08-13 11:53:59,052 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Partner Autocomplete: Sync with remote DB` (0.000s). 
+2025-08-13 11:54:35,726 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2025-08-13 11:54:35,732 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `SMS: SMS Queue Manager` (0.006s). 
+2025-08-13 11:54:35,744 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2025-08-13 11:54:35,750 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Snailmail: process letters queue` (0.006s). 
+2025-08-13 12:22:39,140 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 12:22:39] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.001 0.004
+2025-08-13 12:36:05,021 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 12:36:05] "POST /web/action/load HTTP/1.1" 200 - 8 0.013 0.007
+2025-08-13 12:36:05,329 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 12:36:05] "POST /web/dataset/call_kw/odoo.project/get_views HTTP/1.1" 200 - 31 0.032 0.029
+2025-08-13 12:36:05,369 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 12:36:05] "POST /web/dataset/call_kw/odoo.project/search_panel_select_range HTTP/1.1" 200 - 9 0.010 0.011
+2025-08-13 12:36:05,766 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 12:36:05] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.009 0.097
+2025-08-13 12:36:05,768 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 12:36:05] "POST /web/dataset/call_kw/odoo.project/web_read_group HTTP/1.1" 200 - 4 0.007 0.101
+2025-08-13 12:36:05,769 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 12:36:05] "POST /web/dataset/call_kw/odoo.project/search_panel_select_range HTTP/1.1" 200 - 2 0.009 0.102
+2025-08-13 12:36:05,790 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 12:36:05] "POST /web/dataset/call_kw/odoo.project/web_search_read HTTP/1.1" 200 - 6 0.005 0.010
+2025-08-13 12:36:06,095 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 12:36:06] "POST /web/dataset/call_kw/odoo.project/web_search_read HTTP/1.1" 200 - 6 0.005 0.010
+2025-08-13 12:36:06,107 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 12:36:06] "POST /web/dataset/call_kw/odoo.project/search_panel_select_multi_range HTTP/1.1" 200 - 4 0.017 0.008
+2025-08-13 12:53:59,753 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Notification: Send scheduled message notifications`. 
+2025-08-13 12:53:59,766 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Notification: Send scheduled message notifications` (0.013s). 
+2025-08-13 12:53:59,773 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Mail: Email Queue Manager`. 
+2025-08-13 12:53:59,782 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Mail: Email Queue Manager` (0.009s). 
+2025-08-13 12:53:59,789 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Partner Autocomplete: Sync with remote DB`. 
+2025-08-13 12:53:59,792 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Partner Autocomplete: Sync with remote DB` (0.003s). 
+2025-08-13 12:54:36,229 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `SMS: SMS Queue Manager`. 
+2025-08-13 12:54:36,236 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `SMS: SMS Queue Manager` (0.006s). 
+2025-08-13 12:54:36,245 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Snailmail: process letters queue`. 
+2025-08-13 12:54:36,252 15608 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Snailmail: process letters queue` (0.006s). 
+2025-08-13 13:29:44,459 15608 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:29:44] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.000 0.000
+2025-08-13 13:33:10,339 15608 INFO ? odoo.service.server: Initiating shutdown 
+2025-08-13 13:33:10,339 15608 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-08-13 13:33:17,358 2672 INFO ? odoo: Odoo version 17.0 
+2025-08-13 13:33:17,358 2672 INFO ? odoo: Using configuration file at C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo.conf 
+2025-08-13 13:33:17,358 2672 INFO ? odoo: addons paths: ['C:\\Users\\THINKPAD T1\\OneDrive\\Documents\\odoo17\\odoo\\addons', 'c:\\users\\thinkpad t1\\appdata\\local\\openerp s.a\\odoo\\addons\\17.0', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\addons', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\odoo', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\odoo\\addons', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\odoo\\costum_addons'] 
+2025-08-13 13:33:17,358 2672 INFO ? odoo: database: nezzy@localhost:5432 
+2025-08-13 13:33:17,587 2672 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe 
+2025-08-13 13:33:17,905 2672 INFO ? odoo.service.server: HTTP service (werkzeug) running on ThinkpadT14:8069 
+2025-08-13 13:33:18,062 2672 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-08-13 13:33:18,069 2672 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-08-13 13:33:18,086 2672 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'odoo_project', defaulting to LGPL-3 
+2025-08-13 13:33:18,101 2672 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'guest_book', defaulting to LGPL-3 
+2025-08-13 13:33:18,118 2672 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'employee', defaulting to LGPL-3 
+2025-08-13 13:33:18,234 2672 INFO ? odoo.modules.loading: loading 93 modules... 
+2025-08-13 13:33:18,954 2672 WARNING ? odoo.models: The model odoo.project.line has no _description 
+2025-08-13 13:33:18,991 2672 WARNING ? odoo.api.create: The model odoo.addons.purchase_learn.models.purchase_learn is not overriding the create method in batch 
+2025-08-13 13:33:18,991 2672 WARNING ? odoo.models: The model purchase.learn has no _description 
+2025-08-13 13:33:18,991 2672 WARNING ? odoo.models: The model purchase.learn.line has no _description 
+2025-08-13 13:33:18,991 2672 WARNING ? odoo.models: The model brand.learn has no _description 
+2025-08-13 13:33:18,991 2672 WARNING ? odoo.models: The model purchase.learn.report.wizard has no _description 
+2025-08-13 13:33:19,027 2672 WARNING ? odoo.models: The model odoo.project.line has no _description 
+2025-08-13 13:33:19,027 2672 WARNING ? odoo.models: The model purchase.learn has no _description 
+2025-08-13 13:33:19,027 2672 WARNING ? odoo.models: The model purchase.learn.line has no _description 
+2025-08-13 13:33:19,027 2672 WARNING ? odoo.models: The model brand.learn has no _description 
+2025-08-13 13:33:19,028 2672 WARNING ? odoo.models: The model purchase.learn.report.wizard has no _description 
+2025-08-13 13:33:20,120 2672 INFO ? odoo.modules.loading: 93 modules loaded in 1.89s, 0 queries (+0 extra) 
+2025-08-13 13:33:20,300 2672 INFO ? odoo.modules.loading: Modules loaded. 
+2025-08-13 13:33:20,310 2672 INFO ? odoo.modules.registry: Registry loaded in 2.351s 
+2025-08-13 13:33:20,312 2672 INFO dbodoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-08-13 13:33:20,392 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:20] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 22 0.055 2.380
+2025-08-13 13:33:20,754 2672 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-08-13 13:33:21,757 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:21] "POST /web/action/load HTTP/1.1" 200 - 11 0.021 0.657
+2025-08-13 13:33:21,886 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:21] "POST /web/dataset/call_kw/ir.module.module/get_views HTTP/1.1" 200 - 50 0.043 0.066
+2025-08-13 13:33:22,328 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:22] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 1 0.000 0.107
+2025-08-13 13:33:22,387 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:22] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 40 0.026 0.140
+2025-08-13 13:33:22,951 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:22] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.010 0.721
+2025-08-13 13:33:23,959 2672 INFO ? werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:23] "GET /hr_contract/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.000
+2025-08-13 13:33:29,748 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:29] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.017 0.017
+2025-08-13 13:33:30,025 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:30] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 4 0.005 0.055
+2025-08-13 13:33:30,382 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:30] "POST /web/dataset/call_kw/ir.module.module/search_panel_select_range HTTP/1.1" 200 - 38 0.015 0.020
+2025-08-13 13:33:30,730 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:30] "POST /web/dataset/call_kw/ir.module.module/web_search_read HTTP/1.1" 200 - 3 0.003 0.023
+2025-08-13 13:33:30,974 2672 INFO ? werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:30] "GET /mail_bot/static/description/icon.png HTTP/1.1" 200 - 0 0.000 0.002
+2025-08-13 13:33:32,782 2672 INFO dbodoo odoo.addons.base.models.ir_module: ALLOW access to module.button_immediate_upgrade on ['odoo_project'] to user mhabibabdillah083@gmail.com #2 via 127.0.0.1 
+2025-08-13 13:33:32,782 2672 INFO dbodoo odoo.addons.base.models.ir_module: ALLOW access to module.button_upgrade on ['odoo_project'] to user mhabibabdillah083@gmail.com #2 via 127.0.0.1 
+2025-08-13 13:33:32,782 2672 INFO dbodoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on ['odoo_project'] to user mhabibabdillah083@gmail.com #2 via 127.0.0.1 
+2025-08-13 13:33:33,677 2672 INFO dbodoo odoo.addons.base.models.ir_module: ALLOW access to module.button_install on [] to user mhabibabdillah083@gmail.com #2 via 127.0.0.1 
+2025-08-13 13:33:33,736 2672 INFO dbodoo odoo.modules.loading: loading 1 modules... 
+2025-08-13 13:33:33,742 2672 INFO dbodoo odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-08-13 13:33:33,760 2672 INFO dbodoo odoo.modules.loading: updating modules list 
+2025-08-13 13:33:33,764 2672 INFO dbodoo odoo.addons.base.models.ir_module: ALLOW access to module.update_list on [] to user __system__ #1 via 127.0.0.1 
+2025-08-13 13:33:34,469 2672 INFO dbodoo odoo.modules.loading: loading 93 modules... 
+2025-08-13 13:33:34,501 2672 INFO dbodoo odoo.modules.loading: Loading module odoo_project (37/93) 
+2025-08-13 13:33:34,566 2672 WARNING dbodoo odoo.models: The model odoo.project.line has no _description 
+2025-08-13 13:33:34,628 2672 INFO dbodoo odoo.modules.registry: module odoo_project: creating or updating database tables 
+2025-08-13 13:33:34,829 2672 INFO dbodoo odoo.modules.loading: loading odoo_project/security/ir.model.access.csv 
+2025-08-13 13:33:34,860 2672 INFO dbodoo odoo.modules.loading: loading odoo_project/views/views.xml 
+2025-08-13 13:33:35,094 2672 INFO dbodoo odoo.modules.loading: loading odoo_project/views/templates.xml 
+2025-08-13 13:33:35,118 2672 INFO dbodoo odoo.modules.loading: loading odoo_project/views/product_template_views.xml 
+2025-08-13 13:33:35,173 2672 INFO dbodoo odoo.modules.loading: loading odoo_project/views/report_odoo_project.xml 
+2025-08-13 13:33:35,222 2672 INFO dbodoo odoo.modules.loading: Module odoo_project loaded in 0.72s, 235 queries (+235 other) 
+2025-08-13 13:33:35,222 2672 WARNING dbodoo odoo.models: The model purchase.learn has no _description 
+2025-08-13 13:33:35,222 2672 WARNING dbodoo odoo.models: The model purchase.learn.line has no _description 
+2025-08-13 13:33:35,222 2672 WARNING dbodoo odoo.models: The model brand.learn has no _description 
+2025-08-13 13:33:35,222 2672 WARNING dbodoo odoo.models: The model purchase.learn.report.wizard has no _description 
+2025-08-13 13:33:35,222 2672 WARNING dbodoo odoo.models: The model odoo.project.line has no _description 
+2025-08-13 13:33:35,222 2672 WARNING dbodoo odoo.models: The model purchase.learn has no _description 
+2025-08-13 13:33:35,222 2672 WARNING dbodoo odoo.models: The model purchase.learn.line has no _description 
+2025-08-13 13:33:35,222 2672 WARNING dbodoo odoo.models: The model brand.learn has no _description 
+2025-08-13 13:33:35,222 2672 WARNING dbodoo odoo.models: The model purchase.learn.report.wizard has no _description 
+2025-08-13 13:33:35,253 2672 INFO dbodoo odoo.modules.loading: 93 modules loaded in 0.78s, 235 queries (+235 extra) 
+2025-08-13 13:33:35,699 2672 INFO dbodoo odoo.modules.loading: Model purchase_learn is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2025-08-13 13:33:35,800 2672 INFO dbodoo odoo.modules.registry: verifying fields for every extended model 
+2025-08-13 13:33:36,777 2672 INFO dbodoo odoo.modules.loading: Modules loaded. 
+2025-08-13 13:33:36,781 2672 INFO dbodoo odoo.modules.registry: Registry loaded in 3.075s 
+2025-08-13 13:33:36,782 2672 INFO dbodoo odoo.addons.base.models.ir_module: getting next ir.actions.todo() 
+2025-08-13 13:33:36,790 2672 INFO dbodoo odoo.modules.registry: Registry changed, signaling through the database 
+2025-08-13 13:33:36,791 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:36] "POST /web/dataset/call_button HTTP/1.1" 200 - 4617 2.188 1.828
+2025-08-13 13:33:37,111 2672 INFO dbodoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-08-13 13:33:37,330 2672 WARNING dbodoo odoo.modules.module: Missing `license` key in manifest for 'odoo_project', defaulting to LGPL-3 
+2025-08-13 13:33:37,354 2672 WARNING dbodoo odoo.modules.module: Missing `license` key in manifest for 'guest_book', defaulting to LGPL-3 
+2025-08-13 13:33:37,361 2672 WARNING dbodoo odoo.modules.module: Missing `license` key in manifest for 'employee', defaulting to LGPL-3 
+2025-08-13 13:33:37,824 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:37] "GET /web HTTP/1.1" 200 - 82 0.063 0.653
+2025-08-13 13:33:38,128 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:38] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 4 0.006 0.011
+2025-08-13 13:33:38,262 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:38] "POST /mail/init_messaging HTTP/1.1" 200 - 53 0.113 0.031
+2025-08-13 13:33:38,479 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:38] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 16 0.021 0.000
+2025-08-13 13:33:38,540 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:38] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.000 0.050
+2025-08-13 13:33:38,574 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:38] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.000 0.083
+2025-08-13 13:33:38,592 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:38] "POST /web/action/load HTTP/1.1" 200 - 6 0.050 0.052
+2025-08-13 13:33:38,592 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:38] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.018 0.001
+2025-08-13 13:33:38,615 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:38] "POST /mail/load_message_failures HTTP/1.1" 200 - 13 0.052 0.073
+2025-08-13 13:33:39,024 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:39] "POST /mail/inbox/messages HTTP/1.1" 200 - 7 0.033 0.034
+2025-08-13 13:33:39,806 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:39] "POST /web/action/load HTTP/1.1" 200 - 8 0.000 0.000
+2025-08-13 13:33:40,199 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:40] "POST /web/dataset/call_kw/odoo.project/get_views HTTP/1.1" 200 - 32 0.023 0.035
+2025-08-13 13:33:40,408 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:40] "POST /web/dataset/call_kw/odoo.project/search_panel_select_range HTTP/1.1" 200 - 9 0.008 0.010
+2025-08-13 13:33:40,539 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:40] "POST /web/dataset/call_kw/odoo.project/web_read_group HTTP/1.1" 200 - 4 0.016 0.000
+2025-08-13 13:33:40,539 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:40] "POST /web/dataset/call_kw/odoo.project/search_panel_select_range HTTP/1.1" 200 - 2 0.000 0.016
+2025-08-13 13:33:40,549 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:40] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.000 0.027
+2025-08-13 13:33:40,586 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:40] "POST /web/dataset/call_kw/odoo.project/web_search_read HTTP/1.1" 200 - 6 0.004 0.008
+2025-08-13 13:33:40,591 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:40] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.016 0.053
+2025-08-13 13:33:40,874 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:40] "POST /web/dataset/call_kw/odoo.project/search_panel_select_multi_range HTTP/1.1" 200 - 4 0.004 0.014
+2025-08-13 13:33:40,875 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:40] "POST /web/dataset/call_kw/odoo.project/web_search_read HTTP/1.1" 200 - 6 0.010 0.010
+2025-08-13 13:33:47,668 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:47] "POST /web/action/load HTTP/1.1" 200 - 8 0.003 0.001
+2025-08-13 13:33:47,984 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:47] "POST /report/check_wkhtmltopdf HTTP/1.1" 200 - 1 0.000 0.000
+2025-08-13 13:33:48,001 2672 INFO ? werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:48] "GET /web/static/img/spin.svg HTTP/1.1" 200 - 0 0.000 0.017
+2025-08-13 13:33:48,235 2672 WARNING dbodoo odoo.addons.web.controllers.report: Error while generating report my_module.report_odoo_project_document 
+Traceback (most recent call last):
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\web\controllers\report.py", line 113, in report_download
+    response = self.report_routes(reportname, docids=docids, converter=converter, context=context)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\http.py", line 786, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\web\controllers\report.py", line 42, in report_routes
+    pdf = report.with_context(context)._render_qweb_pdf(reportname, docids, data=data)[0]
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\account\models\ir_actions_report.py", line 58, in _render_qweb_pdf
+    return super()._render_qweb_pdf(report_ref, res_ids=res_ids, data=data)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_actions_report.py", line 925, in _render_qweb_pdf
+    collected_streams = self._render_qweb_pdf_prepare_streams(report_ref, data, res_ids=res_ids)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\sale_pdf_quote_builder\models\ir_actions_report.py", line 15, in _render_qweb_pdf_prepare_streams
+    result = super()._render_qweb_pdf_prepare_streams(report_ref, data, res_ids=res_ids)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\account_edi_ubl_cii\models\ir_actions_report.py", line 11, in _render_qweb_pdf_prepare_streams
+    collected_streams = super()._render_qweb_pdf_prepare_streams(report_ref, data, res_ids)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\account\models\ir_actions_report.py", line 17, in _render_qweb_pdf_prepare_streams
+    return super()._render_qweb_pdf_prepare_streams(report_ref, data, res_ids=res_ids)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_actions_report.py", line 775, in _render_qweb_pdf_prepare_streams
+    html = self.with_context(**additional_context)._render_qweb_html(report_ref, all_res_ids_wo_stream, data=data)[0]
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_actions_report.py", line 1000, in _render_qweb_html
+    return self._render_template(report.report_name, data), 'html'
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_actions_report.py", line 689, in _render_template
+    return view_obj._render_template(template, values).encode()
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_ui_view.py", line 2061, in _render_template
+    return self.env['ir.qweb']._render(template, values)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\profiler.py", line 301, in _tracked_method_render
+    return method_render(self, template, values, **options)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 604, in _render
+    rendering = render_template(irQweb, values)
+  File "<None>", line 5, in not_found_template
+ValueError: External ID not found in the system: my_module.report_odoo_project_document
+2025-08-13 13:33:48,388 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:33:48] "POST /report/download HTTP/1.1" 200 - 10 0.000 0.153
+2025-08-13 13:34:19,009 2672 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:19] "GET /web/service-worker.js HTTP/1.1" 200 - 1 0.001 0.006
+2025-08-13 13:34:20,202 2672 INFO ? odoo.service.server: Initiating shutdown 
+2025-08-13 13:34:20,202 2672 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-08-13 13:34:30,172 15664 INFO ? odoo: Odoo version 17.0 
+2025-08-13 13:34:30,172 15664 INFO ? odoo: Using configuration file at C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo.conf 
+2025-08-13 13:34:30,172 15664 INFO ? odoo: addons paths: ['C:\\Users\\THINKPAD T1\\OneDrive\\Documents\\odoo17\\odoo\\addons', 'c:\\users\\thinkpad t1\\appdata\\local\\openerp s.a\\odoo\\addons\\17.0', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\addons', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\odoo', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\odoo\\addons', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\odoo\\costum_addons'] 
+2025-08-13 13:34:30,172 15664 INFO ? odoo: database: nezzy@localhost:5432 
+2025-08-13 13:34:30,399 15664 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe 
+2025-08-13 13:34:30,729 15664 INFO ? odoo.service.server: HTTP service (werkzeug) running on ThinkpadT14:8069 
+2025-08-13 13:34:31,765 15664 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-08-13 13:34:31,771 15664 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-08-13 13:34:31,781 15664 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'guest_book', defaulting to LGPL-3 
+2025-08-13 13:34:31,787 15664 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'employee', defaulting to LGPL-3 
+2025-08-13 13:34:31,823 15664 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'odoo_project', defaulting to LGPL-3 
+2025-08-13 13:34:31,866 15664 INFO ? odoo.modules.loading: loading 93 modules... 
+2025-08-13 13:34:32,545 15664 INFO ? odoo.modules.loading: Loading module odoo_project (37/93) 
+2025-08-13 13:34:32,631 15664 WARNING ? odoo.models: The model odoo.project.line has no _description 
+2025-08-13 13:34:32,686 15664 INFO ? odoo.modules.registry: module odoo_project: creating or updating database tables 
+2025-08-13 13:34:32,814 15664 INFO ? odoo.modules.loading: loading odoo_project/security/ir.model.access.csv 
+2025-08-13 13:34:32,846 15664 INFO ? odoo.modules.loading: loading odoo_project/views/views.xml 
+2025-08-13 13:34:33,083 15664 INFO ? odoo.modules.loading: loading odoo_project/views/templates.xml 
+2025-08-13 13:34:33,083 15664 INFO ? odoo.modules.loading: loading odoo_project/views/product_template_views.xml 
+2025-08-13 13:34:33,115 15664 INFO ? odoo.modules.loading: loading odoo_project/views/report_odoo_project.xml 
+2025-08-13 13:34:33,188 15664 INFO ? odoo.modules.loading: Module odoo_project loaded in 0.64s, 238 queries (+238 other) 
+2025-08-13 13:34:33,216 15664 WARNING ? odoo.api.create: The model odoo.addons.purchase_learn.models.purchase_learn is not overriding the create method in batch 
+2025-08-13 13:34:33,230 15664 WARNING ? odoo.models: The model purchase.learn has no _description 
+2025-08-13 13:34:33,231 15664 WARNING ? odoo.models: The model purchase.learn.line has no _description 
+2025-08-13 13:34:33,231 15664 WARNING ? odoo.models: The model brand.learn has no _description 
+2025-08-13 13:34:33,232 15664 WARNING ? odoo.models: The model purchase.learn.report.wizard has no _description 
+2025-08-13 13:34:33,264 15664 WARNING ? odoo.models: The model odoo.project.line has no _description 
+2025-08-13 13:34:33,264 15664 WARNING ? odoo.models: The model purchase.learn has no _description 
+2025-08-13 13:34:33,264 15664 WARNING ? odoo.models: The model purchase.learn.line has no _description 
+2025-08-13 13:34:33,264 15664 WARNING ? odoo.models: The model brand.learn has no _description 
+2025-08-13 13:34:33,264 15664 WARNING ? odoo.models: The model purchase.learn.report.wizard has no _description 
+2025-08-13 13:34:34,357 15664 INFO ? odoo.modules.loading: 93 modules loaded in 2.49s, 238 queries (+238 extra) 
+2025-08-13 13:34:34,661 15664 INFO ? odoo.modules.loading: Model purchase_learn is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2025-08-13 13:34:34,759 15664 INFO ? odoo.modules.registry: verifying fields for every extended model 
+2025-08-13 13:34:34,847 15664 INFO ? odoo.modules.loading: Modules loaded. 
+2025-08-13 13:34:34,856 15664 INFO ? odoo.modules.registry: Registry loaded in 3.155s 
+2025-08-13 13:34:34,898 15664 INFO dbodoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-08-13 13:34:34,960 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:34] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 2 0.023 3.191
+2025-08-13 13:34:35,297 15664 WARNING dbodoo odoo.modules.module: Missing `license` key in manifest for 'employee', defaulting to LGPL-3 
+2025-08-13 13:34:35,320 15664 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-08-13 13:34:35,323 15664 WARNING dbodoo odoo.modules.module: Missing `license` key in manifest for 'guest_book', defaulting to LGPL-3 
+2025-08-13 13:34:35,327 15664 WARNING dbodoo odoo.modules.module: Missing `license` key in manifest for 'odoo_project', defaulting to LGPL-3 
+2025-08-13 13:34:35,790 15664 INFO dbodoo odoo.modules.registry: Caches invalidated, signaling through the database: ['default', 'templates'] 
+2025-08-13 13:34:35,791 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:35] "GET /web HTTP/1.1" 200 - 816 0.606 3.484
+2025-08-13 13:34:37,783 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:37] "GET /web/webclient/load_menus/7d592d635daded2d908826f80cb14c30e066c126df46e979a5a33690e0c561ba HTTP/1.1" 200 - 2 0.002 1.651
+2025-08-13 13:34:37,784 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:37] "GET /web/assets/eca235a/web.assets_web.min.css HTTP/1.1" 200 - 3 0.000 1.970
+2025-08-13 13:34:37,792 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:37] "GET /web/assets/494be3d/web.assets_web.min.js HTTP/1.1" 200 - 3 0.004 1.973
+2025-08-13 13:34:37,795 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:37] "GET /web/webclient/translations/ece34ea9bdf5c2c89dcc34407c84eb58f0cb24cd?lang=en_US HTTP/1.1" 200 - 3 0.008 1.656
+2025-08-13 13:34:38,266 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:38] "GET /web/webclient/translations/ece34ea9bdf5c2c89dcc34407c84eb58f0cb24cd?lang=en_US HTTP/1.1" 200 - 2 0.002 0.005
+2025-08-13 13:34:38,278 15664 INFO ? werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:38] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.018
+2025-08-13 13:34:38,278 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:38] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.007 0.009
+2025-08-13 13:34:38,523 15664 INFO ? werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:38] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.000
+2025-08-13 13:34:38,577 15664 INFO ? werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:38] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.000
+2025-08-13 13:34:38,597 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:38] "POST /web/action/load HTTP/1.1" 200 - 8 0.014 0.007
+2025-08-13 13:34:38,650 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:38] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 15 0.024 0.015
+2025-08-13 13:34:38,661 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:38] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 9 0.007 0.011
+2025-08-13 13:34:38,700 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:38] "POST /mail/init_messaging HTTP/1.1" 200 - 54 0.088 0.036
+2025-08-13 13:34:38,893 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:38] "POST /web/dataset/call_kw/odoo.project/get_views HTTP/1.1" 200 - 32 0.036 0.019
+2025-08-13 13:34:38,926 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:38] "POST /mail/load_message_failures HTTP/1.1" 200 - 13 0.016 0.000
+2025-08-13 13:34:39,024 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:39] "POST /web/dataset/call_kw/odoo.project/search_panel_select_range HTTP/1.1" 200 - 9 0.000 0.015
+2025-08-13 13:34:39,229 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:39] "POST /web/dataset/call_kw/odoo.project/search_panel_select_range HTTP/1.1" 200 - 2 0.006 0.007
+2025-08-13 13:34:39,229 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:39] "POST /web/dataset/call_kw/odoo.project/web_read_group HTTP/1.1" 200 - 4 0.004 0.008
+2025-08-13 13:34:39,229 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:39] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.003 0.007
+2025-08-13 13:34:39,243 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:39] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 4 0.000 0.023
+2025-08-13 13:34:39,559 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:39] "POST /web/dataset/call_kw/odoo.project/search_panel_select_multi_range HTTP/1.1" 200 - 4 0.000 0.017
+2025-08-13 13:34:39,559 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:39] "POST /web/dataset/call_kw/odoo.project/web_search_read HTTP/1.1" 200 - 6 0.017 0.000
+2025-08-13 13:34:39,581 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:39] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.001 0.004
+2025-08-13 13:34:39,581 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:39] "POST /web/dataset/call_kw/odoo.project/web_search_read HTTP/1.1" 200 - 6 0.020 0.019
+2025-08-13 13:34:48,104 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:48] "POST /web/action/load HTTP/1.1" 200 - 8 0.000 0.000
+2025-08-13 13:34:48,353 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:48] "POST /report/check_wkhtmltopdf HTTP/1.1" 200 - 1 0.000 0.000
+2025-08-13 13:34:48,494 15664 WARNING dbodoo odoo.addons.web.controllers.report: Error while generating report odoo_project.report_odoo_project_document 
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\cache.py", line 99, in lookup
+    r = d[key]
+  File "<decorator-gen-5>", line 2, in __getitem__
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\func.py", line 87, in locked
+    return func(inst, *args, **kwargs)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\lru.py", line 34, in __getitem__
+    a = self.d[obj]
+KeyError: ('ir.qweb', <function IrQWeb._get_cached_values at 0x000002228BB4FC70>, ('2401', "'en_US'", 'False', 'None', 'None', 'None', 'None', 'None'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 756, in _generate_code
+    + self._compile_node(element, compile_context, 2)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\web_editor\models\ir_qweb_fields.py", line 67, in _compile_node
+    return super()._compile_node(el, compile_context, indent)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1340, in _compile_node
+    return body + self._compile_directives(el, compile_context, level)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\mail\models\ir_qweb.py", line 16, in _compile_directives
+    return super()._compile_directives(el, compile_context, indent)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1426, in _compile_directives
+    code.extend(self._compile_directive(el, compile_context, directive, level))
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\profiler.py", line 334, in _tracked_compile_directive
+    return method_compile_directive(self, el, options, directive, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1453, in _compile_directive
+    return compile_handler(el, compile_context, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1743, in _compile_directive_inner_content
+    body.extend(self._compile_node(item, compile_context, level))
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\web_editor\models\ir_qweb_fields.py", line 67, in _compile_node
+    return super()._compile_node(el, compile_context, indent)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1340, in _compile_node
+    return body + self._compile_directives(el, compile_context, level)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\mail\models\ir_qweb.py", line 16, in _compile_directives
+    return super()._compile_directives(el, compile_context, indent)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1426, in _compile_directives
+    code.extend(self._compile_directive(el, compile_context, directive, level))
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\profiler.py", line 334, in _tracked_compile_directive
+    return method_compile_directive(self, el, options, directive, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1453, in _compile_directive
+    return compile_handler(el, compile_context, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 2167, in _compile_directive_call
+    code_content.extend(self._compile_directive(el, compile_context, 'inner-content', 1))
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\profiler.py", line 334, in _tracked_compile_directive
+    return method_compile_directive(self, el, options, directive, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1453, in _compile_directive
+    return compile_handler(el, compile_context, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1743, in _compile_directive_inner_content
+    body.extend(self._compile_node(item, compile_context, level))
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\web_editor\models\ir_qweb_fields.py", line 67, in _compile_node
+    return super()._compile_node(el, compile_context, indent)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1308, in _compile_node
+    return self._compile_static_node(el, compile_context, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1400, in _compile_static_node
+    body = self._compile_directive(el, compile_context, 'inner-content', level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\profiler.py", line 334, in _tracked_compile_directive
+    return method_compile_directive(self, el, options, directive, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1453, in _compile_directive
+    return compile_handler(el, compile_context, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1743, in _compile_directive_inner_content
+    body.extend(self._compile_node(item, compile_context, level))
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\web_editor\models\ir_qweb_fields.py", line 67, in _compile_node
+    return super()._compile_node(el, compile_context, indent)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1308, in _compile_node
+    return self._compile_static_node(el, compile_context, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1400, in _compile_static_node
+    body = self._compile_directive(el, compile_context, 'inner-content', level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\profiler.py", line 334, in _tracked_compile_directive
+    return method_compile_directive(self, el, options, directive, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1453, in _compile_directive
+    return compile_handler(el, compile_context, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1743, in _compile_directive_inner_content
+    body.extend(self._compile_node(item, compile_context, level))
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\web_editor\models\ir_qweb_fields.py", line 67, in _compile_node
+    return super()._compile_node(el, compile_context, indent)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1308, in _compile_node
+    return self._compile_static_node(el, compile_context, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1400, in _compile_static_node
+    body = self._compile_directive(el, compile_context, 'inner-content', level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\profiler.py", line 334, in _tracked_compile_directive
+    return method_compile_directive(self, el, options, directive, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1453, in _compile_directive
+    return compile_handler(el, compile_context, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1743, in _compile_directive_inner_content
+    body.extend(self._compile_node(item, compile_context, level))
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\web_editor\models\ir_qweb_fields.py", line 67, in _compile_node
+    return super()._compile_node(el, compile_context, indent)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1340, in _compile_node
+    return body + self._compile_directives(el, compile_context, level)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\mail\models\ir_qweb.py", line 16, in _compile_directives
+    return super()._compile_directives(el, compile_context, indent)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1426, in _compile_directives
+    code.extend(self._compile_directive(el, compile_context, directive, level))
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\profiler.py", line 334, in _tracked_compile_directive
+    return method_compile_directive(self, el, options, directive, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1453, in _compile_directive
+    return compile_handler(el, compile_context, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1891, in _compile_directive_foreach
+    self._compile_directives(el, compile_context, level + 1) +
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\mail\models\ir_qweb.py", line 16, in _compile_directives
+    return super()._compile_directives(el, compile_context, indent)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1426, in _compile_directives
+    code.extend(self._compile_directive(el, compile_context, directive, level))
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\profiler.py", line 334, in _tracked_compile_directive
+    return method_compile_directive(self, el, options, directive, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1453, in _compile_directive
+    return compile_handler(el, compile_context, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1743, in _compile_directive_inner_content
+    body.extend(self._compile_node(item, compile_context, level))
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\web_editor\models\ir_qweb_fields.py", line 67, in _compile_node
+    return super()._compile_node(el, compile_context, indent)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1340, in _compile_node
+    return body + self._compile_directives(el, compile_context, level)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\mail\models\ir_qweb.py", line 16, in _compile_directives
+    return super()._compile_directives(el, compile_context, indent)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1426, in _compile_directives
+    code.extend(self._compile_directive(el, compile_context, directive, level))
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\profiler.py", line 334, in _tracked_compile_directive
+    return method_compile_directive(self, el, options, directive, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 1453, in _compile_directive
+    return compile_handler(el, compile_context, level)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 2115, in _compile_directive_field
+    assert tagName not in ("table", "tbody", "thead", "tfoot", "tr", "td",
+AssertionError: QWeb widgets do not work correctly on 'td' elements
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\web\controllers\report.py", line 113, in report_download
+    response = self.report_routes(reportname, docids=docids, converter=converter, context=context)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\http.py", line 786, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\web\controllers\report.py", line 42, in report_routes
+    pdf = report.with_context(context)._render_qweb_pdf(reportname, docids, data=data)[0]
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\account\models\ir_actions_report.py", line 58, in _render_qweb_pdf
+    return super()._render_qweb_pdf(report_ref, res_ids=res_ids, data=data)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_actions_report.py", line 925, in _render_qweb_pdf
+    collected_streams = self._render_qweb_pdf_prepare_streams(report_ref, data, res_ids=res_ids)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\sale_pdf_quote_builder\models\ir_actions_report.py", line 15, in _render_qweb_pdf_prepare_streams
+    result = super()._render_qweb_pdf_prepare_streams(report_ref, data, res_ids=res_ids)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\account_edi_ubl_cii\models\ir_actions_report.py", line 11, in _render_qweb_pdf_prepare_streams
+    collected_streams = super()._render_qweb_pdf_prepare_streams(report_ref, data, res_ids)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\account\models\ir_actions_report.py", line 17, in _render_qweb_pdf_prepare_streams
+    return super()._render_qweb_pdf_prepare_streams(report_ref, data, res_ids=res_ids)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_actions_report.py", line 775, in _render_qweb_pdf_prepare_streams
+    html = self.with_context(**additional_context)._render_qweb_html(report_ref, all_res_ids_wo_stream, data=data)[0]
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_actions_report.py", line 1000, in _render_qweb_html
+    return self._render_template(report.report_name, data), 'html'
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_actions_report.py", line 689, in _render_template
+    return view_obj._render_template(template, values).encode()
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_ui_view.py", line 2061, in _render_template
+    return self.env['ir.qweb']._render(template, values)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\profiler.py", line 301, in _tracked_method_render
+    return method_render(self, template, values, **options)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 602, in _render
+    template_functions, def_name = irQweb._compile(template)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\profiler.py", line 309, in _tracked_compile
+    return method_compile(self, template)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 671, in _compile
+    return self._load_values(base_key_cache, generate_functions)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 2523, in _load_values
+    value = self._get_cached_values(cache_key, get_value)
+  File "<decorator-gen-70>", line 2, in _get_cached_values
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\tools\cache.py", line 104, in lookup
+    value = d[key] = self.method(*args, **kwargs)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 2536, in _get_cached_values
+    return get_value()
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 640, in generate_functions
+    code, options, def_name = self._generate_code(template)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_qweb.py", line 781, in _generate_code
+    raise QWebException("Error when compiling xml template",
+odoo.addons.base.models.ir_qweb.QWebException: Error when compiling xml template
+AssertionError: QWeb widgets do not work correctly on 'td' elements
+Template: odoo_project.report_odoo_project_document
+Path: /t/t/div/table/tbody/tr/td[4]
+Node: <td style="border:1px solid #eee; padding:4px; text-align:right;" t-field="o.price_total" t-options="{&quot;widget&quot;: &quot;monetary&quot;, &quot;display_currency&quot;: o.currency_id}"/>
+2025-08-13 13:34:48,494 15664 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:34:48] "POST /report/download HTTP/1.1" 200 - 10 0.003 0.054
+2025-08-13 13:35:30,800 15664 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Base: Auto-vacuum internal data`. 
+2025-08-13 13:35:30,866 15664 INFO dbodoo odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-08-13 13:35:30,930 15664 INFO dbodoo odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-08-13 13:35:30,983 15664 INFO dbodoo odoo.addons.auth_totp.models.auth_totp: GC'd 0 totp devices entries 
+2025-08-13 13:35:31,005 15664 INFO dbodoo odoo.models.unlink: User #1 deleted bus.bus records with IDs: [714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724] 
+2025-08-13 13:35:31,141 15664 INFO dbodoo odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-08-13 13:35:31,371 15664 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Base: Auto-vacuum internal data` (0.570s). 
+2025-08-13 13:36:31,388 15664 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Base: Auto-vacuum internal data`. 
+2025-08-13 13:36:31,487 15664 INFO dbodoo odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-08-13 13:36:31,589 15664 INFO dbodoo odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-08-13 13:36:31,659 15664 INFO dbodoo odoo.addons.auth_totp.models.auth_totp: GC'd 0 totp devices entries 
+2025-08-13 13:36:31,692 15664 INFO dbodoo odoo.models.unlink: User #1 deleted bus.bus records with IDs: [725, 726] 
+2025-08-13 13:36:31,883 15664 INFO dbodoo odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-08-13 13:36:32,182 15664 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Base: Auto-vacuum internal data` (0.794s). 
+2025-08-13 13:40:33,657 15664 INFO ? odoo.service.server: Initiating shutdown 
+2025-08-13 13:40:33,657 15664 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 
+2025-08-13 13:40:33,838 15664 INFO ? odoo.sql_db: ConnectionPool(used=0/count=0/max=64): Closed 6 connections  
+2025-08-13 13:40:36,812 18372 INFO ? odoo: Odoo version 17.0 
+2025-08-13 13:40:36,812 18372 INFO ? odoo: Using configuration file at C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo.conf 
+2025-08-13 13:40:36,812 18372 INFO ? odoo: addons paths: ['C:\\Users\\THINKPAD T1\\OneDrive\\Documents\\odoo17\\odoo\\addons', 'c:\\users\\thinkpad t1\\appdata\\local\\openerp s.a\\odoo\\addons\\17.0', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\addons', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\odoo', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\odoo\\addons', 'c:\\users\\thinkpad t1\\onedrive\\documents\\odoo17\\odoo\\costum_addons'] 
+2025-08-13 13:40:36,812 18372 INFO ? odoo: database: nezzy@localhost:5432 
+2025-08-13 13:40:37,027 18372 INFO ? odoo.addons.base.models.ir_actions_report: Will use the Wkhtmltopdf binary at C:\Program Files\wkhtmltopdf\bin\wkhtmltopdf.exe 
+2025-08-13 13:40:37,319 18372 INFO ? odoo.service.server: HTTP service (werkzeug) running on ThinkpadT14:8069 
+2025-08-13 13:40:37,447 18372 INFO ? odoo.modules.loading: loading 1 modules... 
+2025-08-13 13:40:37,453 18372 INFO ? odoo.modules.loading: 1 modules loaded in 0.01s, 0 queries (+0 extra) 
+2025-08-13 13:40:37,465 18372 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'guest_book', defaulting to LGPL-3 
+2025-08-13 13:40:37,479 18372 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'employee', defaulting to LGPL-3 
+2025-08-13 13:40:37,512 18372 WARNING ? odoo.modules.module: Missing `license` key in manifest for 'odoo_project', defaulting to LGPL-3 
+2025-08-13 13:40:37,567 18372 INFO ? odoo.modules.loading: loading 93 modules... 
+2025-08-13 13:40:38,243 18372 INFO ? odoo.modules.loading: Loading module odoo_project (37/93) 
+2025-08-13 13:40:38,338 18372 WARNING ? odoo.models: The model odoo.project.line has no _description 
+2025-08-13 13:40:38,397 18372 INFO ? odoo.modules.registry: module odoo_project: creating or updating database tables 
+2025-08-13 13:40:38,505 18372 INFO ? odoo.modules.loading: loading odoo_project/security/ir.model.access.csv 
+2025-08-13 13:40:38,529 18372 INFO ? odoo.modules.loading: loading odoo_project/views/views.xml 
+2025-08-13 13:40:38,747 18372 INFO ? odoo.modules.loading: loading odoo_project/views/templates.xml 
+2025-08-13 13:40:38,749 18372 INFO ? odoo.modules.loading: loading odoo_project/views/product_template_views.xml 
+2025-08-13 13:40:38,787 18372 INFO ? odoo.modules.loading: loading odoo_project/views/report_odoo_project.xml 
+2025-08-13 13:40:38,839 18372 INFO ? odoo.modules.loading: Module odoo_project loaded in 0.60s, 238 queries (+238 other) 
+2025-08-13 13:40:38,874 18372 WARNING ? odoo.api.create: The model odoo.addons.purchase_learn.models.purchase_learn is not overriding the create method in batch 
+2025-08-13 13:40:38,875 18372 WARNING ? odoo.models: The model purchase.learn has no _description 
+2025-08-13 13:40:38,875 18372 WARNING ? odoo.models: The model purchase.learn.line has no _description 
+2025-08-13 13:40:38,875 18372 WARNING ? odoo.models: The model brand.learn has no _description 
+2025-08-13 13:40:38,875 18372 WARNING ? odoo.models: The model purchase.learn.report.wizard has no _description 
+2025-08-13 13:40:38,904 18372 WARNING ? odoo.models: The model odoo.project.line has no _description 
+2025-08-13 13:40:38,905 18372 WARNING ? odoo.models: The model purchase.learn has no _description 
+2025-08-13 13:40:38,905 18372 WARNING ? odoo.models: The model purchase.learn.line has no _description 
+2025-08-13 13:40:38,905 18372 WARNING ? odoo.models: The model brand.learn has no _description 
+2025-08-13 13:40:38,905 18372 WARNING ? odoo.models: The model purchase.learn.report.wizard has no _description 
+2025-08-13 13:40:39,923 18372 INFO ? odoo.modules.loading: 93 modules loaded in 2.36s, 238 queries (+238 extra) 
+2025-08-13 13:40:40,208 18372 INFO ? odoo.modules.loading: Model purchase_learn is declared but cannot be loaded! (Perhaps a module was partially removed or renamed) 
+2025-08-13 13:40:40,308 18372 INFO ? odoo.modules.registry: verifying fields for every extended model 
+2025-08-13 13:40:40,388 18372 INFO ? odoo.modules.loading: Modules loaded. 
+2025-08-13 13:40:40,390 18372 INFO ? odoo.modules.registry: Registry loaded in 3.011s 
+2025-08-13 13:40:40,438 18372 INFO dbodoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-08-13 13:40:40,482 18372 INFO dbodoo odoo.addons.base.models.ir_http: Generating routing map for key None 
+2025-08-13 13:40:40,582 18372 INFO dbodoo odoo.modules.registry: Caches invalidated, signaling through the database: ['default', 'templates'] 
+2025-08-13 13:40:40,630 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:40] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 740 0.440 2.812
+2025-08-13 13:40:40,833 18372 WARNING dbodoo odoo.modules.module: Missing `license` key in manifest for 'employee', defaulting to LGPL-3 
+2025-08-13 13:40:40,882 18372 WARNING dbodoo odoo.modules.module: Missing `license` key in manifest for 'odoo_project', defaulting to LGPL-3 
+2025-08-13 13:40:40,911 18372 WARNING dbodoo odoo.modules.module: Missing `license` key in manifest for 'guest_book', defaulting to LGPL-3 
+2025-08-13 13:40:40,987 18372 INFO ? odoo.addons.bus.models.bus: Bus.loop listen imbus on db postgres 
+2025-08-13 13:40:41,372 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:41] "GET /web HTTP/1.1" 200 - 82 0.139 3.382
+2025-08-13 13:40:43,574 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:43] "GET /web/assets/494be3d/web.assets_web.min.js HTTP/1.1" 200 - 3 0.002 2.167
+2025-08-13 13:40:43,576 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:43] "GET /web/webclient/load_menus/7d592d635daded2d908826f80cb14c30e066c126df46e979a5a33690e0c561ba HTTP/1.1" 200 - 2 0.003 1.866
+2025-08-13 13:40:43,576 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:43] "GET /web/webclient/translations/ece34ea9bdf5c2c89dcc34407c84eb58f0cb24cd?lang=en_US HTTP/1.1" 200 - 2 0.004 1.865
+2025-08-13 13:40:43,576 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:43] "GET /web/assets/eca235a/web.assets_web.min.css HTTP/1.1" 200 - 3 0.004 2.171
+2025-08-13 13:40:44,058 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "GET /web/webclient/translations/ece34ea9bdf5c2c89dcc34407c84eb58f0cb24cd?lang=en_US HTTP/1.1" 200 - 2 0.002 0.004
+2025-08-13 13:40:44,071 18372 INFO ? werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "GET /web/static/img/favicon.ico HTTP/1.1" 200 - 0 0.000 0.004
+2025-08-13 13:40:44,091 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "POST /web/action/load HTTP/1.1" 200 - 8 0.013 0.010
+2025-08-13 13:40:44,307 18372 INFO ? werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "GET /web/static/lib/odoo_ui_icons/fonts/odoo_ui_icons.woff2 HTTP/1.1" 200 - 0 0.000 0.003
+2025-08-13 13:40:44,375 18372 INFO ? werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "GET /web/static/src/libs/fontawesome/fonts/fontawesome-webfont.woff2?v=4.7.0 HTTP/1.1" 200 - 0 0.000 0.004
+2025-08-13 13:40:44,416 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "POST /web/dataset/call_kw/res.users/systray_get_activities HTTP/1.1" 200 - 15 0.028 0.009
+2025-08-13 13:40:44,487 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "GET /web/manifest.webmanifest HTTP/1.1" 200 - 9 0.033 0.016
+2025-08-13 13:40:44,487 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "POST /mail/init_messaging HTTP/1.1" 200 - 55 0.066 0.050
+2025-08-13 13:40:44,503 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "POST /web/dataset/call_kw/odoo.project/get_views HTTP/1.1" 200 - 32 0.018 0.066
+2025-08-13 13:40:44,637 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "POST /mail/load_message_failures HTTP/1.1" 200 - 13 0.010 0.006
+2025-08-13 13:40:44,706 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "POST /web/dataset/call_kw/odoo.project/search_panel_select_range HTTP/1.1" 200 - 9 0.016 0.002
+2025-08-13 13:40:44,804 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "POST /web/dataset/call_kw/odoo.project/search_panel_select_range HTTP/1.1" 200 - 2 0.000 0.001
+2025-08-13 13:40:44,825 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "POST /web/dataset/call_kw/res.users/has_group HTTP/1.1" 200 - 2 0.000 0.005
+2025-08-13 13:40:44,825 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "POST /web/dataset/call_kw/odoo.project/web_read_group HTTP/1.1" 200 - 4 0.000 0.005
+2025-08-13 13:40:44,837 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "POST /web/dataset/call_kw/odoo.project/search_panel_select_multi_range HTTP/1.1" 200 - 4 0.001 0.011
+2025-08-13 13:40:44,975 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:44] "POST /web/dataset/call_kw/odoo.project/web_search_read HTTP/1.1" 200 - 6 0.004 0.019
+2025-08-13 13:40:45,136 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:45] "POST /web/dataset/call_kw/odoo.project/web_search_read HTTP/1.1" 200 - 6 0.010 0.006
+2025-08-13 13:40:45,162 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:45] "GET /bus/websocket_worker_bundle?v=17.0-1 HTTP/1.1" 304 - 4 0.009 0.010
+2025-08-13 13:40:45,180 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:45] "GET /web/image?model=res.users&field=avatar_128&id=2 HTTP/1.1" 304 - 13 0.016 0.021
+2025-08-13 13:40:45,554 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:45] "GET /websocket?version=17.0-1 HTTP/1.1" 101 - 1 0.000 0.000
+2025-08-13 13:40:50,675 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:50] "POST /web/action/load HTTP/1.1" 200 - 8 0.008 0.005
+2025-08-13 13:40:50,913 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:50] "POST /report/check_wkhtmltopdf HTTP/1.1" 200 - 1 0.000 0.002
+2025-08-13 13:40:51,095 18372 WARNING dbodoo odoo.addons.web.controllers.report: Error while generating report odoo_project.report_odoo_project_document 
+Traceback (most recent call last):
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\web\controllers\report.py", line 113, in report_download
+    response = self.report_routes(reportname, docids=docids, converter=converter, context=context)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\http.py", line 786, in route_wrapper
+    result = endpoint(self, *args, **params_ok)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\web\controllers\report.py", line 42, in report_routes
+    pdf = report.with_context(context)._render_qweb_pdf(reportname, docids, data=data)[0]
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\account\models\ir_actions_report.py", line 58, in _render_qweb_pdf
+    return super()._render_qweb_pdf(report_ref, res_ids=res_ids, data=data)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_actions_report.py", line 925, in _render_qweb_pdf
+    collected_streams = self._render_qweb_pdf_prepare_streams(report_ref, data, res_ids=res_ids)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\sale_pdf_quote_builder\models\ir_actions_report.py", line 15, in _render_qweb_pdf_prepare_streams
+    result = super()._render_qweb_pdf_prepare_streams(report_ref, data, res_ids=res_ids)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\account_edi_ubl_cii\models\ir_actions_report.py", line 11, in _render_qweb_pdf_prepare_streams
+    collected_streams = super()._render_qweb_pdf_prepare_streams(report_ref, data, res_ids)
+  File "c:\users\thinkpad t1\onedrive\documents\odoo17\addons\account\models\ir_actions_report.py", line 17, in _render_qweb_pdf_prepare_streams
+    return super()._render_qweb_pdf_prepare_streams(report_ref, data, res_ids=res_ids)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_actions_report.py", line 777, in _render_qweb_pdf_prepare_streams
+    bodies, html_ids, header, footer, specific_paperformat_args = self.with_context(**additional_context)._prepare_html(html, report_model=report_sudo.model)
+  File "C:\Users\THINKPAD T1\OneDrive\Documents\odoo17\odoo\addons\base\models\ir_actions_report.py", line 373, in _prepare_html
+    body_parent = root.xpath('//main')[0]
+IndexError: list index out of range
+2025-08-13 13:40:51,100 18372 INFO dbodoo werkzeug: 127.0.0.1 - - [13/Aug/2025 13:40:51] "POST /report/download HTTP/1.1" 200 - 46 0.025 0.086
+2025-08-13 13:42:37,374 18372 INFO dbodoo odoo.addons.base.models.ir_cron: Starting job `Base: Auto-vacuum internal data`. 
+2025-08-13 13:42:37,438 18372 INFO dbodoo odoo.addons.base.models.ir_attachment: filestore gc 0 checked, 0 removed 
+2025-08-13 13:42:37,500 18372 INFO dbodoo odoo.addons.base.models.res_users: GC'd 0 user log entries 
+2025-08-13 13:42:37,534 18372 INFO dbodoo odoo.addons.auth_totp.models.auth_totp: GC'd 0 totp devices entries 
+2025-08-13 13:42:37,553 18372 INFO dbodoo odoo.models.unlink: User #1 deleted bus.bus records with IDs: [727, 728] 
+2025-08-13 13:42:37,699 18372 INFO dbodoo odoo.addons.sms.models.sms_sms: GC'd 0 sms marked for deletion 
+2025-08-13 13:42:37,918 18372 INFO dbodoo odoo.addons.base.models.ir_cron: Job done: `Base: Auto-vacuum internal data` (0.544s). 
+2025-08-13 13:45:41,701 18372 INFO ? odoo.service.server: Initiating shutdown 
+2025-08-13 13:45:41,701 18372 INFO ? odoo.service.server: Hit CTRL-C again or send a second signal to force the shutdown. 

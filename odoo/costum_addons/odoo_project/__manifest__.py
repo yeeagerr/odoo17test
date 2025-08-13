@@ -25,7 +25,8 @@ Long description of module's purpose
         'security/ir.model.access.csv',
         'views/views.xml',
         'views/templates.xml',
-        'views/product_template_views.xml'
+        'views/product_template_views.xml',
+        'views/report_odoo_project.xml'
     ],
     # only loaded in demonstration mode
     'demo': [

@@ -1,0 +1,85 @@
+<odoo>
+  <!-- ===== Template QWeb: definisi layout PDF yang akan dirender ===== -->
+  <template id="report_odoo_project_document">
+    <!-- PENTING: web.html_container membuat wrapper <main> yang dibutuhkan engine PDF -->
+    <t t-call="web.html_container">
+      <!-- Header/Footer standar (logo, perusahaan, footer halaman) + CSS dasar report -->
+      <t t-call="web.external_layout">
+        <!-- Satu halaman PDF. Tambah <div class="page"> lagi jika ingin page break. -->
+        <div class="page">
+          <!-- Judul report biasa (teks statis) -->
+          <h2>Odoo Project Report</h2>
+
+          <!-- Tabel utama: class bawaan Odoo + sedikit inline-style agar rapih saat di-PDF -->
+          <table class="table table-sm" style="width:100%; border-collapse: collapse;">
+            <!-- Bagian header kolom -->
+            <thead>
+              <!-- Satu baris header -->
+              <tr>
+                <th style="border:1px solid #ccc; padding:4px;">Name</th>
+                <th style="border:1px solid #ccc; padding:4px;">User</th>
+                <th style="border:1px solid #ccc; padding:4px;">Total</th>
+                <th style="border:1px solid #ccc; padding:4px;">Price Total</th>
+                <th style="border:1px solid #ccc; padding:4px;">State</th>
+              </tr>
+            </thead>
+
+            <!-- Isi tabel (data record) -->
+            <tbody>
+              <!-- Loop semua record yang dicetak.
+                   'docs' otomatis berisi record terpilih di list (active_ids).
+                   'o' adalah alias tiap record. -->
+              <tr t-foreach="docs" t-as="o">
+                <td style="border:1px solid #eee; padding:4px;" t-esc="o.name"></td>
+                <td style="border:1px solid #eee; padding:4px;" t-esc="o.user_id.display_name or ''"></td>
+                <td style="border:1px solid #eee; padding:4px; text-align:right;" t-esc="o.total"></td>
+
+                <!-- Kolom Price Total: GUNAKAN <span t-field> di dalam <td> (bukan langsung di <td>)
+                     supaya widget 'monetary' berfungsi dan tidak error. -->
+                <td style="border:1px solid #eee; padding:4px; text-align:right;">
+                  <!-- t-field = minta QWeb render sesuai tipe field (monetary/date/datetime dll)
+                       display_currency: pakai currency di record; jika kosong, pakai currency company. -->
+                  <span t-field="o.price_total"
+                        t-options='{"widget":"monetary",
+                                    "display_currency": (o.currency_id or o.company_id.currency_id)}'/>
+                </td>
+
+                <!-- Kolom State: tampilkan label selection (bukan kodenya).
+                     _fields['state'].selection = daftar (value, label).
+                     dict(...).get(o.state, o.state) = ambil labelnya, jika gagal tampilkan nilai aslinya. -->
+                <td style="border:1px solid #eee; padding:4px;">
+                  <span t-esc="dict(o._fields['state'].selection).get(o.state, o.state)"/>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div> 
+      </t> 
+    </t> 
+  </template>
+  <!-- SELESAI: Template QWeb -->
+
+
+  <!-- ===== Action report: mengikat template ke model agar muncul di Action → Print ===== -->
+  <record id="action_report_odoo_project" model="ir.actions.report">
+    <field name="name">Odoo Project PDF</field>
+    <field name="model">odoo.project</field>
+    <!-- Nama template yang dipakai: <nama_modul>.<id_template> -->
+    <field name="report_name">odoo_project.report_odoo_project_document</field>
+
+    <!-- Jenis output: qweb-pdf agar dikonversi ke PDF -->
+    <field name="report_type">qweb-pdf</field>
+
+    <!-- Binding ke model agar tombol Print otomatis muncul di list & form -->
+    <field name="binding_model_id" ref="model_odoo_project"/>
+    <!-- Tipe binding 'report' (standar untuk QWeb report) -->
+    <field name="binding_type">report</field>
+    <!-- Di view mana tombol Print ditampilkan: list & form -->
+    <field name="binding_view_types">list,form</field>
+
+    <!-- Nama file saat diunduh. object.display_name = nama record.
+         Untuk multiple record, Odoo membuat file per record atau gabungan sesuai internal. -->
+    <field name="print_report_name">'Odoo_Project_' + (object.display_name or '')</field>
+  </record>
+  <!-- ===== SELESAI: Action report ===== -->
+</odoo>
